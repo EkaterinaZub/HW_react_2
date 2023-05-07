@@ -1,0 +1,14 @@
+.navigation{
+    display: flex;
+    justify-content: space-around;
+    height: 78px;
+    align-items: center;
+}
+
+.href{
+    text-decoration: none;
+    font-family: 'Gilroy';
+    font-size: 18px;
+    font-weight: 500;
+    color: #CFCFCF;
+}
