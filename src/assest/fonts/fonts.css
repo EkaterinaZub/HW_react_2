@@ -7,3 +7,8 @@
     font-family: "Gilroy";
     src: url(../fonts/Gilroy-Light.otf);
 }
+
+@font-face {
+    font-family: "Proxima Nova";
+    src: url(../fonts/proxima-nova-condensed-light.ttf);
+}
