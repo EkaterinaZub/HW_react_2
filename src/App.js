@@ -15,9 +15,9 @@ import { useEffect, useState } from 'react';
 
 
 export const  App=() =>{
-  let {state} = useLocation()
-
-  const[weather, setWeather] = useState({})
+  let {state} = useLocation();
+  const [showMenu, setShowMenu]= useState(false);
+  const[weather, setWeather] = useState({});
 
   useEffect( ()=>{
     fetch('https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&current_weather=true&hourly=temperature_2m,relativehumidity_2m,windspeed_10m')
@@ -33,7 +33,7 @@ export const  App=() =>{
 
       };
     
-     setWeather(weatherData) });
+setWeather(weatherData) });
     //  console.log(weatherData)
   },[])
 
@@ -43,7 +43,7 @@ export const  App=() =>{
 
   return (
     <div className="App">
-      <Header/>
+      <Header showMenu={showMenu} setShowMenu={setShowMenu}/>
       {!state && <Banner/>}
       <Navigation/>
       <Routes>
@@ -54,7 +54,7 @@ export const  App=() =>{
         <Route path='/conditions' element={<Conditions/>}/>
         </Routes>
 
-      <Footer weather={weather}/>
+      <Footer weather={weather} showMenu={showMenu} setShowMenu={setShowMenu}/>
       
       
     </div>

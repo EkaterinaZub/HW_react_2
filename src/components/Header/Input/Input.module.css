@@ -1,0 +1,54 @@
+
+.container{
+    display: flex;
+    position: relative;
+    
+    
+
+}
+
+
+
+.input{
+    width: 555px;
+    height: 52px;
+    background-color: #504B4A;
+    color: #CFCFCF;
+    border-radius: 10px;
+    border: none;
+    /* margin-left: 14px; */
+}
+
+.location{
+    position: absolute;
+    top: 14px;
+    left: 14px;
+
+}
+
+.search{
+    position: absolute;
+    top: 14px;
+    right: 30px;
+}
+
+@media (max-width: 1000px) {
+	.input {
+		width: 80%;
+	}
+
+    .search{
+        position: absolute;
+        top: 14px;
+        right: 70px;
+    }
+}
+
+@media (max-width:1060px) {
+
+    .container{
+        display: none;
+        
+    }
+
+}

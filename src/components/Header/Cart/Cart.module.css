@@ -1,0 +1,46 @@
+.container{
+    display: flex;
+    justify-content:space-between;
+    width: 149px;
+    height: 52px;
+    background-color: #618967;
+    align-items: center;
+    border-radius: 10px;
+    text-decoration: none;
+
+
+}
+.containerCart{
+    display: flex;
+    padding: 24px;
+    
+    
+    /* width: 80px; */
+    /* border-right: 1px solid #ffff; */
+    /* height: 38px; */
+    /* margin: auto; */
+}
+
+.cart{
+    font-family: 'Roboto' , "sans serif";
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffff;
+    
+
+}
+.containerCircle{
+    width: 50px;
+    border-left: 1px solid #ffff;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.cirkle{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #ffff;
+
+}

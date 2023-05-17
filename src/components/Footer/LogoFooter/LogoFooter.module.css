@@ -1,0 +1,36 @@
+@import "../../../assest/fonts/fonts.css";
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    /* justify-content: space-around; */
+    align-items: start;
+    
+    
+}
+
+.logo{
+    font-size: 25px;
+    font-family: 'Gilroy';
+    font-weight: 700;
+    color: #FFFF;
+    
+}
+
+.itemOOO{
+    font-size: 12px;
+    width: 189px;
+    text-align: start;
+    
+    font-family: 'Gilroy';
+    font-weight: 500;
+    color: #CFCFCF;
+}
+
+.item{
+    font-size: 14px;
+    font-family: 'Gilroy';
+    font-weight: 500;
+    color: #FFFFFF;
+}

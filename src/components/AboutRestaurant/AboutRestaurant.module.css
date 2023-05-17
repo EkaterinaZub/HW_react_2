@@ -1,0 +1,49 @@
+@import "../../assest/fonts/fonts.css";
+
+.container{
+    display: flex;
+    background-image: url(../../assest/images/group.png);
+    justify-content: space-around;
+    align-items: center;
+    width: 1364px;
+    height: 610px;
+    background-repeat: no-repeat;
+}
+.description{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    width: 563px;
+    height: 400px;
+}
+
+.title{
+    font-family: 'Gilroy';
+    font-size: 32px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.content{
+    font-family: 'Gilroy';
+    font-size: 20px;
+    font-weight: 400;
+    color: #FFFFFF;
+    text-align: left;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+width: 223px;
+height: 59px;
+font-family: 'Proxima Nova';
+font-size: 13px;
+font-weight: 700;
+background: rgba(255, 255, 255, 0.05);
+border-radius: 10px;
+color: #FFFFFF;
+
+}

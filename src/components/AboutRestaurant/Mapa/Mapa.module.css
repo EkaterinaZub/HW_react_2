@@ -1,0 +1,149 @@
+@import "../../../assest/fonts/fonts.css";
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    /* max-width: 1440px; */
+    height: 665px;
+    background-image: url(../../../assest/images/rectangle.png);
+}
+
+.contacts{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    width: 526px;
+    height: 405px;
+    border-radius: 15px;
+    background-color:  #2E2B2C;
+    margin-left: 109px;
+    padding-left: 52px;
+
+}
+
+.header{
+    font-family: 'Gilroy';
+    font-size: 30px;
+    font-weight: 700;
+    color: #FFFFFF;
+    
+}
+
+.location{
+    height: 169px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.address{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.img{
+    width: 24px;
+    height: 24px;
+    margin-right: 11px;
+}
+
+.containerAddress{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 391px;
+    height: 65px;
+}
+
+.option{
+    font-family: 'Gilroy';
+    font-size: 14px;
+    font-weight: 400;
+    color: #CFCFCF;
+}
+
+.title{
+    font-family: 'Gilroy';
+    font-size: 16px;
+    font-weight: 600;
+    color: #FFFFFF;
+    text-align: start;
+}
+
+.booking{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.button{
+    width: 211px;
+    height: 59px;
+    background-color: #72A479;
+    border: none;
+    font-family: 'Proxima Nova';
+    font-size: 13px;
+    font-weight: 700;
+    color: #FFFFFF;
+    border-radius: 10px;
+    margin-right: 33px;
+    
+}
+
+.telefon{
+    display: flex;
+    flex-direction: column;
+   
+
+}
+
+.numer{
+    font-family: 'Gilroy';
+    font-size: 23px;
+    font-weight: 700;
+    color: #FFFFFF;
+   
+}
+
+.descriptions{
+    font-family: 'Gilroy';
+    font-size: 13px;
+    font-weight: 400;
+    color: #CFCFCF;
+}
+.networks{
+    display: flex;
+    flex-direction: row;
+}
+
+.text{
+    font-family: 'Gilroy';
+    font-size: 16px;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin-right: 26px;
+    margin-left: 100px;
+}
+
+.item{
+    margin-right: 10px;
+}
+
+/* .here{
+    
+    width: 98px;
+    height: 112px;
+} */
+
+.weHere{
+    width: 98px;
+    height: 112px;
+    margin-left: 386px;
+}

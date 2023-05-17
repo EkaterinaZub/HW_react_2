@@ -12,3 +12,15 @@
     font-weight: 500;
     color: #CFCFCF;
 }
+
+@media (max-width:1060px) {
+    .navigation{
+       justify-content: start;
+        flex-wrap: wrap;
+        height: 100%;
+        gap: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+}

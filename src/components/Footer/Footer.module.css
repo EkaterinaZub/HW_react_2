@@ -1,0 +1,30 @@
+
+.container{
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    
+    height: 195px;
+    background-color: #211F20;
+   
+}
+
+@media (max-width:1060px) {
+
+    .container{
+        justify-content: space-around;
+        flex-wrap: wrap;
+       
+    }
+    
+
+}
+
+@media (max-width:430px) {
+
+    .container{
+        margin-top: 10px;
+        gap: 20px;
+           
+    }
+}
