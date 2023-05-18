@@ -10,6 +10,7 @@ import { AboutRestaurant } from './components/AboutRestaurant/AboutRestaurant';
 import { Share } from './components/Share/Share';
 import { Conditions } from './components/Conditions/Conditions';
 import { useEffect, useState } from 'react';
+import { PurchaseReturns } from './components/PurchaseReturns/PurchaseReturns';
 
 
 
@@ -37,20 +38,19 @@ setWeather(weatherData) });
     //  console.log(weatherData)
   },[])
 
-  console.log(weather)
   
-
-
   return (
     <div className="App">
       <Header showMenu={showMenu} setShowMenu={setShowMenu}/>
       {!state && <Banner/>}
       <Navigation/>
       <Routes>
+        <Route path='/' element={<ColdAppetizers/>}/>
         <Route path='/:url' element={<ColdAppetizers/>}/>
         <Route path='/basket' element={<Basket/>}/>
         <Route path='/about_the_restaurant' element={<AboutRestaurant/>}/>
         <Route path='/stock' element={<Share/>}/>
+        <Route path='/return' element={<PurchaseReturns/>}/>
         <Route path='/conditions' element={<Conditions/>}/>
         </Routes>
 
