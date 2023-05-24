@@ -1,0 +1,128 @@
+@import "../../../assest/fonts/fonts.css";
+
+
+
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+    flex-wrap: wrap;
+}
+
+.button {
+    width: 181px;
+    height: 60px;
+    font-family: 'Gilroy';
+    font-size: 16px;
+    font-weight: 400;
+    color: #FFFFFF;
+    background: #504B4A;
+    border: 1px solid #72A479;
+
+
+
+}
+
+.checked {
+    background: #72A479;
+}
+
+.button:hover {
+    background: #72A479;
+
+}
+
+.right {
+    margin-left: 15px;
+    border-radius: 10px;
+}
+
+.left {
+    border-radius: 10px 0px 0px 10px;
+}
+
+.centr {
+    border-radius: 0 10px 10px 0;
+}
+
+.person {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 263px;
+    height: 60px;
+    margin-top: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    color: #FFFFFF;
+}
+
+.span {
+
+    font-family: 'Gilroy';
+    font-size: 16px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+.count {
+    display: flex;
+    border: none;
+    background-color: transparent;
+    /* width: 20px;  */
+    font-family: 'Gilroy';
+    font-size: 25px;
+    padding: 10px 10px 10px 10px;
+    font-weight: 400;
+    color: #FFFFFF;
+
+}
+
+.phone {
+    font-size: 16px;
+    font-family: 'Gilroy';
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-left: 30px;
+
+}
+
+.radio {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-family: 'Gilroy';
+    font-size: 13px;
+    font-weight: 500;
+    color: #FFFFFF;
+    margin-left: 30px;
+
+}
+
+@media (max-width:590px) {
+    .right {
+        margin-top: 20px;
+        margin-left: 0;
+        width: 80%;
+    }
+
+    .left {
+        width: 137px;
+    }
+
+    .centr {
+        width: 137px;
+    }
+
+}
+
+@media (max-width:374px) {
+    .right {
+
+        width: 273px;
+    }
+
+
+}

@@ -1,11 +1,11 @@
-.navigation{
+.navigation {
     display: flex;
     justify-content: space-around;
     height: 78px;
     align-items: center;
 }
 
-.href{
+.href {
     text-decoration: none;
     font-family: 'Gilroy';
     font-size: 18px;
@@ -14,8 +14,8 @@
 }
 
 @media (max-width:1060px) {
-    .navigation{
-       justify-content: start;
+    .navigation {
+        justify-content: start;
         flex-wrap: wrap;
         height: 100%;
         gap: 30px;

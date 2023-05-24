@@ -1,8 +1,8 @@
 import styles from "./EffectComponents.module.css"
 
 
-export const EffectComponents = ({weather})=>{
-    return(
+export const EffectComponents = ({ weather }) => {
+    return (
         <div className={styles.container}>
             <span className={styles.location}>{weather.location}</span>
             <span className={styles.data}>{weather.data}</span>

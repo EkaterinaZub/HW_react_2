@@ -16,7 +16,7 @@
 
 }
 
-.cross{
+.cross {
     display: none;
     color: white;
 }
@@ -26,8 +26,9 @@
 
     .container {
         display: none;
-        
+
     }
+
     .navHeader {
         display: flex;
         flex-direction: column;
@@ -39,11 +40,12 @@
         background-color: rgb(123, 118, 118);
         padding: 20px;
     }
-    .cross{
+
+    .cross {
         display: block;
         font-size: 30px;
-        
-        
+
+
     }
 
 }

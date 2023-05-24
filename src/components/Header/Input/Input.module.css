@@ -1,15 +1,14 @@
-
-.container{
+.container {
     display: flex;
     position: relative;
-    
-    
+
+
 
 }
 
 
 
-.input{
+.input {
     width: 555px;
     height: 52px;
     background-color: #504B4A;
@@ -19,25 +18,25 @@
     /* margin-left: 14px; */
 }
 
-.location{
+.location {
     position: absolute;
     top: 14px;
     left: 14px;
 
 }
 
-.search{
+.search {
     position: absolute;
     top: 14px;
     right: 30px;
 }
 
 @media (max-width: 1000px) {
-	.input {
-		width: 80%;
-	}
+    .input {
+        width: 80%;
+    }
 
-    .search{
+    .search {
         position: absolute;
         top: 14px;
         right: 70px;
@@ -46,9 +45,9 @@
 
 @media (max-width:1060px) {
 
-    .container{
+    .container {
         display: none;
-        
+
     }
 
 }

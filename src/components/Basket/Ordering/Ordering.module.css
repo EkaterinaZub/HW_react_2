@@ -1,0 +1,20 @@
+@import "../../../assest/fonts/fonts.css";
+
+.container {
+    display: flex;
+    /* width: 760px; */
+    height: 105px;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.button {
+    width: 209px;
+    height: 51px;
+    font-family: 'Gilroy';
+    font-weight: 700;
+    color: white;
+    background: #72A479;
+    border-radius: 10px;
+    border: none;
+}

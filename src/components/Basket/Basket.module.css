@@ -1,4 +1,7 @@
-
-.container{
+.container {
     background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    background-color: #44403F;
+
 }

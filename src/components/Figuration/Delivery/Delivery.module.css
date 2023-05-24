@@ -1,0 +1,185 @@
+@import '../../../assest/fonts/fonts.css';
+
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+    align-items: center;
+}
+
+.delivery {
+    width: 181px;
+    height: 60px;
+    font-family: 'Gilroy';
+    font-size: 16px;
+    font-weight: 700;
+    color: #FFFFFF;
+    background: #504B4A;
+    border: 1px solid #72A479;
+    border-radius: 10px 0px 0px 10px;
+
+}
+
+.pikap {
+    width: 181px;
+    height: 60px;
+    font-family: 'Gilroy';
+    font-size: 16px;
+    font-weight: 700;
+    color: #FFFFFF;
+    background: #504B4A;
+    border: 1px solid #72A479;
+    border-radius: 0 10px 10px 0;
+
+}
+
+.delivery:hover {
+
+
+    background: #72A479;
+}
+
+.checked {
+    background: #72A479;
+}
+
+
+.pikap:hover {
+    background: #72A479;
+}
+
+.address {
+    font-size: 16px;
+    font-family: 'Gilroy';
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-left: 30px;
+
+}
+
+.clock {
+    margin-left: 20px;
+
+}
+
+
+
+.span {
+    font-size: 16px;
+    font-family: 'Gilroy';
+    font-weight: 500;
+    color: #FFFFFF;
+    margin-left: 10px;
+
+}
+
+.inputs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: start;
+    margin-left: 30px;
+    gap: 15px;
+}
+
+.input {
+
+    height: 60px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 0;
+    border-radius: 10px;
+    background-color: #494544;
+    font-family: 'Gilroy';
+    font-size: 16px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+.street {
+    width: 413px;
+}
+
+
+.house {
+    width: 173px;
+
+}
+
+.apartment {
+    width: 225px;
+}
+
+.entrance {
+    width: 173px;
+}
+
+.floor {
+    width: 173px;
+}
+
+.comment {
+    width: 602px;
+}
+
+.errorSpan {
+    display: flex;
+    width: 50%;
+}
+
+.error {
+    color: red;
+}
+
+
+@media (max-width:800px) {
+    .buttons {
+        flex-wrap: wrap;
+    }
+
+    .clock {
+        margin-top: 20px;
+
+    }
+
+
+
+    .comment {
+        width: 80%;
+    }
+
+}
+
+@media (max-width:500px) {
+    .house {
+        width: 80%;
+
+    }
+
+    .apartment {
+        width: 80%;
+    }
+
+    .entrance {
+        width: 80%;
+    }
+
+    .floor {
+        width: 80%;
+    }
+
+    .street {
+        width: 80%;
+    }
+}
+
+@media (max-width:400px) {
+    .delivery {
+        width: 137px;
+
+    }
+
+    .pikap {
+        width: 137px;
+    }
+}

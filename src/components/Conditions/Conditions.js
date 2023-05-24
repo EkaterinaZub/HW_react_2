@@ -1,11 +1,10 @@
-import styles from './Conditions.module.css'
+import styles from './Conditions.module.css';
+import { Title } from '../../common/Title/Title';
 
-export const Conditions = ()=> {
+export const Conditions = () => {
     return (
         <div className={styles.container}>
-        Conditions
-        
-        
+            <Title title='Условия доставки' />
         </div>
     )
 

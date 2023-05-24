@@ -1,0 +1,48 @@
+@import "../../../assest/fonts/fonts.css";
+
+
+
+
+.buttons {
+    display: flex;
+    margin-left: 30px;
+}
+
+.button {
+    width: 181px;
+    height: 60px;
+    font-family: 'Gilroy';
+    font-size: 16px;
+    font-weight: 700;
+    color: #FFFFFF;
+    background: #504B4A;
+    border: 1px solid #72A479;
+
+
+
+}
+
+.button:hover {
+    background: #72A479;
+}
+
+.checked {
+    background: #72A479;
+}
+
+.left {
+    border-radius: 10px 0px 0px 10px;
+}
+
+.right {
+    border-radius: 0 10px 10px 0;
+}
+
+
+@media (max-width:590px) {
+    .button {
+        width: 92px;
+        font-size: 12px;
+
+    }
+}

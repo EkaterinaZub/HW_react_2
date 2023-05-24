@@ -1,4 +1,4 @@
-.container{
+.container {
     display: flex;
     justify-content: space-between;
     width: 180px;
@@ -6,7 +6,7 @@
 
 }
 
-.circle{
+.circle {
     display: flex;
     justify-content: center;
     width: 32px;
@@ -16,28 +16,26 @@
     align-items: center;
 
 }
-.location {
-  
-    
 
-}
+.location {}
 
-.containerContact{
+.containerContact {
     display: flex;
     flex-direction: column;
     align-items: start;
     width: 136px;
     height: 39px;
 }
-.contact{
-    font-family: 'Roboto' , "sans serif";
+
+.contact {
+    font-family: 'Roboto', "sans serif";
     font-size: 12px;
     font-weight: 400;
     color: #CFCFCF;
 }
 
-.telefon{
-    font-family: 'Roboto' , "sans serif";
+.telefon {
+    font-family: 'Roboto', "sans serif";
     font-size: 16px;
     font-weight: 700;
     color: #CFCFCF;
@@ -45,9 +43,9 @@
 
 @media (max-width:1060px) {
 
-    .container{
+    .container {
         display: none;
-        
+
     }
 
 }

@@ -1,0 +1,100 @@
+@import "../../../assest/fonts/fonts.css";
+
+
+.container {
+    display: flex;
+
+    width: 800px;
+    height: 85px;
+    background: #504B4A;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.text {
+    /* display: flex; */
+    font-size: 13px;
+    font-family: 'Gilroy';
+    font-weight: 500;
+    color: #FFFFFF;
+    align-items: center;
+}
+
+
+.link {
+    color: #72A479;
+    /* margin-left: 5px; */
+}
+
+.checkbox {
+    /* display: flex; */
+    width: 22px;
+    height: 22px;
+    /* margin-right: 10px; */
+}
+
+/* .checkbox {
+    display: none;
+  }
+  
+.input {
+    height: 12px;
+    width: 12px;
+    border: 1px solid gray;
+    display: inline-block;
+    position: relative;
+    background-color:#FFF;
+    border-radius:2px;
+    padding:3px;
+}
+
+.input:before {
+    content: '\2714';
+    position: absolute;
+    top: -5px;
+    left: 0;
+    font-size:23px;
+    color:green;
+}
+
+.input:checked {
+    content: '\2714';
+    position: absolute;
+    top: -5px;
+    left: 0;
+    font-size:23px;
+    color:green;
+} */
+
+
+@media (max-width:800px) {
+
+    .container {
+        width: 100%;
+        flex-wrap: wrap;
+
+        padding: 30px;
+
+
+    }
+
+
+    .text {
+        margin-left: 0;
+        padding-left: 0;
+        width: 80%;
+
+    }
+
+    .order {
+        margin-top: 20px;
+
+    }
+
+    .checkbox {
+        margin-left: 30px;
+    }
+
+
+}

@@ -1,9 +1,10 @@
-import styles from './share.module.css'
+import styles from './share.module.css';
+import { Title } from '../../common/Title/Title';
 
-export const Share = ()=> {
+export const Share = () => {
     return (
         <div className={styles.share}>
-            Share
+            <Title title='Акции' />
         </div>
     )
 

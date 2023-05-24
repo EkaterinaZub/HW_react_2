@@ -1,20 +1,17 @@
 @import "../../../assest/fonts/fonts.css";
 
-.container{
-    
-}
 
-.dishes{
+.dishes {
     display: flex;
     justify-content: space-around;
     gap: 20px;
     flex-wrap: wrap;
-    
-    
+
+
 
 }
 
-.cards{
+.cards {
     display: flex;
     flex-direction: column;
     position: relative;
@@ -22,12 +19,12 @@
     /* align-items: start; */
     width: 329px;
     /* height: 385px; */
-    background-color: #494544;
+    background-color: #504B4A;
     border-radius: 10px;
-   
+
 }
 
-.header{
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -36,47 +33,51 @@
 }
 
 
-.weigt{
+.weigt {
     font-family: 'Gilroy';
     font-size: 12px;
     font-weight: 400;
     color: #FFFF;
-    
+
 
 }
 
-.title{
+.title {
+    display: flex;
+    margin-left: 30px;
+    padding-left: 20px;
     font-family: 'Gilroy';
     color: #FFFF;
     font-size: 32px;
     font-weight: 700;
-    
+    border-left: 4px solid #618967;
 }
 
-.name{
+.name {
     font-family: 'Gilroy';
     color: #FFFF;
     font-size: 22px;
     font-weight: 700;
 }
 
-.description{
+.description {
     font-family: 'Gilroy';
     color: #FFFF;
     font-size: 13px;
     font-weight: 400;
     text-align: start;
     padding-left: 20px;
-   
+
 }
 
-.price{
+.price {
     font-family: 'Gilroy';
     color: #FFFF;
     font-size: 20px;
     font-weight: 600;
 }
-.buy{
+
+.buy {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -85,7 +86,7 @@
     padding-right: 16px;
 }
 
-.button{
+.button {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -98,9 +99,9 @@
 }
 
 @media (max-width:400px) {
-    .cards{
-        
+    .cards {
+
         width: 80%;
-        
+
     }
 }

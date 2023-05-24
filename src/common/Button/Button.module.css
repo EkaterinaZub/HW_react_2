@@ -1,0 +1,12 @@
+@import '../../assest/fonts/fonts.css';
+
+.button {
+    width: 209px;
+    height: 51px;
+    font-family: 'Gilroy';
+    font-weight: 700;
+    color: white;
+    background: #72A479;
+    border-radius: 10px;
+    border: none;
+}

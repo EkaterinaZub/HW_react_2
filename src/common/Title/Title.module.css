@@ -1,0 +1,12 @@
+@import '../../assest/fonts/fonts.css';
+
+.title {
+    display: flex;
+    margin-left: 30px;
+    padding-left: 20px;
+    font-family: 'Gilroy';
+    color: #FFFF;
+    font-size: 32px;
+    font-weight: 700;
+    border-left: 4px solid #618967;
+}

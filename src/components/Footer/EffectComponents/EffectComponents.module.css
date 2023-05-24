@@ -1,31 +1,29 @@
-
-
-.container{
+.container {
     display: flex;
     flex-direction: column;
-    
+
 
 }
 
-.location{
+.location {
     font-size: 40px;
     font-weight: 600;
     color: #c3b3b3;
 }
 
-.data{
+.data {
     font-size: 20px;
     font-weight: 400;
     color: #c3b3b3;
 }
 
-.temperature{
+.temperature {
     font-size: 20px;
     font-weight: 400;
     color: #c3b3b3;
 }
 
-.windspeed{
+.windspeed {
     font-size: 20px;
     font-weight: 400;
     color: #c3b3b3;
@@ -33,10 +31,10 @@
 
 @media (max-width:430px) {
 
-    .container{
+    .container {
         padding-bottom: 20px;
-       
+
     }
-    
+
 
 }

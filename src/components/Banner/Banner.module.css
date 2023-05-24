@@ -1,14 +1,14 @@
 @import "../../assest/fonts/fonts.css";
 
 
-.container{
+.container {
     position: relative;
     width: 1440px;
     height: 484px;
     background-image: url(../../assest/images/maskGroup.png);
 }
 
-.banner{
+.banner {
     position: absolute;
     width: 613px;
     transform-origin: 100% 0;
@@ -18,31 +18,31 @@
 }
 
 .text {
-    font-family: 'Zing Rust Demo' , "sans serif";
+    font-family: 'Zing Rust Demo', "sans serif";
     font-size: 67px;
     font-weight: 400;
     color: #FFFF;
-    text-shadow: -8px 5px 1px black ,
-                 -8px 5px 2px white;
-    
+    text-shadow: -8px 5px 1px black,
+        -8px 5px 2px white;
+
 }
 
-.delivery{
+.delivery {
     position: absolute;
     width: 230px;
     height: 36px;
     background-color: #618967;
     left: 291px;
     bottom: 125px;
-    transform: skew(-6deg,-9deg);
+    transform: skew(-6deg, -9deg);
     box-shadow: -1px 7px 0px 5px rgb(241, 238, 238, 0.02);
-    
+
 }
 
 
 
-.question{
-    font-family: 'Zing Rust Demo' , "sans serif";
+.question {
+    font-family: 'Zing Rust Demo', "sans serif";
     font-size: 25px;
     font-weight: 400;
     color: #FFFF;
@@ -50,10 +50,10 @@
 
 @media (max-width:800px) {
 
-    .container{
+    .container {
         display: none;
-       
+
     }
-    
+
 
 }

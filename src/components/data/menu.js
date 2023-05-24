@@ -12,44 +12,44 @@ export const menu = [
         title: 'Холодные закуски',
         products: [
             {
-                id:1,
+                id: 1,
                 title: 'Ягненок',
                 description: 'Фаршированный гречневой кашей курагой, апельсином и зеленым яблоком',
                 weigt: 'Вес: 225',
-                price: 620 ,
+                price: 620,
                 images: {
                     src: lamb,
                     alt: 'food'
                 }
             },
             {
-                id:2,
+                id: 2,
                 title: 'Индейка',
                 description: 'Фаршированная яблоком',
                 weigt: 'Вес: 225',
-                price: 450 ,
+                price: 450,
                 images: {
                     src: turkey,
                     alt: 'food'
                 }
             },
             {
-                id:3,
+                id: 3,
                 title: 'Осетр',
                 description: 'Запеченный',
                 weigt: 'Вес: 225',
-                price: 7900 ,
+                price: 7900,
                 images: {
                     src: sturgeon,
                     alt: 'food'
                 }
             },
             {
-                id:4,
+                id: 4,
                 title: 'Баклажаны',
                 description: 'Фаршированные рисом, курагой и айвой',
                 weigt: 'Вес: 225',
-                price: 3230 ,
+                price: 3230,
                 images: {
                     src: eggplant,
                     alt: 'food'
@@ -64,24 +64,24 @@ export const menu = [
         title: 'Горячие закуски',
         products: [
             {
-                id:1,
+                id: 1,
                 title: 'Ягненок',
                 description: 'Фаршированный гречневой кашей курагой, апельсином и зеленым яблоком',
                 weigt: 'Вес: 225',
-                price: 620 ,
+                price: 620,
                 images: {
                     src: lamb,
                     alt: 'food'
                 }
             },
-            
-            
+
+
             {
-                id:4,
+                id: 4,
                 title: 'Баклажаны',
                 description: 'Фаршированные рисом, курагой и айвой',
                 weigt: 'Вес: 225',
-                price: 3230 ,
+                price: 3230,
                 images: {
                     src: eggplant,
                     alt: 'food'
@@ -97,34 +97,34 @@ export const menu = [
         title: 'Мясные блюда',
         products: [
             {
-                id:1,
+                id: 1,
                 title: 'Ягненок',
                 description: 'Фаршированный гречневой кашей курагой, апельсином и зеленым яблоком',
                 weigt: 'Вес: 225',
-                price: 620 ,
+                price: 620,
                 images: {
                     src: lamb,
                     alt: 'food'
                 }
             },
-            
+
             {
-                id:3,
+                id: 3,
                 title: 'Осетр',
                 description: 'Запеченный',
                 weigt: 'Вес: 225',
-                price: 7900 ,
+                price: 7900,
                 images: {
                     src: sturgeon,
                     alt: 'food'
                 }
             },
             {
-                id:4,
+                id: 4,
                 title: 'Баклажаны',
                 description: 'Фаршированные рисом, курагой и айвой',
                 weigt: 'Вес: 225',
-                price: 3230 ,
+                price: 3230,
                 images: {
                     src: eggplant,
                     alt: 'food'
@@ -140,34 +140,34 @@ export const menu = [
         title: 'Супы',
         products: [
             {
-                id:1,
+                id: 1,
                 title: 'Ягненок',
                 description: 'Фаршированный гречневой кашей курагой, апельсином и зеленым яблоком',
                 weigt: 'Вес: 225',
-                price: 620 ,
+                price: 620,
                 images: {
                     src: lamb,
                     alt: 'food'
                 }
             },
-            
+
             {
-                id:3,
+                id: 3,
                 title: 'Осетр',
                 description: 'Запеченный',
                 weigt: 'Вес: 225',
-                price: 7900 ,
+                price: 7900,
                 images: {
                     src: sturgeon,
                     alt: 'food'
                 }
             },
             {
-                id:4,
+                id: 4,
                 title: 'Баклажаны',
                 description: 'Фаршированные рисом, курагой и айвой',
                 weigt: 'Вес: 225',
-                price: 3230 ,
+                price: 3230,
                 images: {
                     src: eggplant,
                     alt: 'food'
@@ -183,44 +183,44 @@ export const menu = [
         title: 'Рыбные блюда',
         products: [
             {
-                id:1,
+                id: 1,
                 title: 'Ягненок',
                 description: 'Фаршированный гречневой кашей курагой, апельсином и зеленым яблоком',
                 weigt: 'Вес: 225',
-                price:  620 ,
+                price: 620,
                 images: {
                     src: lamb,
                     alt: 'food'
                 }
             },
             {
-                id:2,
+                id: 2,
                 title: 'Индейка',
                 description: 'Фаршированная яблоком',
                 weigt: 'Вес: 225',
-                price: 450 ,
+                price: 450,
                 images: {
                     src: turkey,
                     alt: 'food'
                 }
             },
             {
-                id:3,
+                id: 3,
                 title: 'Осетр',
                 description: 'Запеченный',
                 weigt: 'Вес: 225',
-                price: 7900 ,
+                price: 7900,
                 images: {
                     src: sturgeon,
                     alt: 'food'
                 }
             },
             {
-                id:4,
+                id: 4,
                 title: 'Баклажаны',
                 description: 'Фаршированные рисом, курагой и айвой',
                 weigt: 'Вес: 225',
-                price: 3230 ,
+                price: 3230,
                 images: {
                     src: eggplant,
                     alt: 'food'
@@ -236,44 +236,44 @@ export const menu = [
         title: 'Гриль меню',
         products: [
             {
-                id:1,
+                id: 1,
                 title: 'Ягненок',
                 description: 'Фаршированный гречневой кашей курагой, апельсином и зеленым яблоком',
                 weigt: 'Вес: 225',
-                price:  620 ,
+                price: 620,
                 images: {
                     src: lamb,
                     alt: 'food'
                 }
             },
             {
-                id:2,
+                id: 2,
                 title: 'Индейка',
                 description: 'Фаршированная яблоком',
                 weigt: 'Вес: 225',
-                price: 450 ,
+                price: 450,
                 images: {
                     src: turkey,
                     alt: 'food'
                 }
             },
             {
-                id:3,
+                id: 3,
                 title: 'Осетр',
                 description: 'Запеченный',
                 weigt: 'Вес: 225',
-                price: 7900 ,
+                price: 7900,
                 images: {
                     src: sturgeon,
                     alt: 'food'
                 }
             },
             {
-                id:4,
+                id: 4,
                 title: 'Баклажаны',
                 description: 'Фаршированные рисом, курагой и айвой',
                 weigt: 'Вес: 225',
-                price: 3230 ,
+                price: 3230,
                 images: {
                     src: eggplant,
                     alt: 'food'
@@ -281,7 +281,7 @@ export const menu = [
             }
 
         ]
-        
+
 
     },
     {
@@ -290,44 +290,44 @@ export const menu = [
         title: 'Фирменные блюда',
         products: [
             {
-                id:1,
+                id: 1,
                 title: 'Ягненок',
                 description: 'Фаршированный гречневой кашей курагой, апельсином и зеленым яблоком',
                 weigt: 'Вес: 225',
-                price: 620 ,
+                price: 620,
                 images: {
                     src: lamb,
                     alt: 'food'
                 }
             },
             {
-                id:2,
+                id: 2,
                 title: 'Индейка',
                 description: 'Фаршированная яблоком',
                 weigt: 'Вес: 225',
-                price: 450 ,
+                price: 450,
                 images: {
                     src: turkey,
                     alt: 'food'
                 }
             },
             {
-                id:3,
+                id: 3,
                 title: 'Осетр',
                 description: 'Запеченный',
                 weigt: 'Вес: 225',
-                price: 7900 ,
+                price: 7900,
                 images: {
                     src: sturgeon,
                     alt: 'food'
                 }
             },
             {
-                id:4,
+                id: 4,
                 title: 'Баклажаны',
                 description: 'Фаршированные рисом, курагой и айвой',
                 weigt: 'Вес: 225',
-                price: 3230 ,
+                price: 3230,
                 images: {
                     src: eggplant,
                     alt: 'food'
@@ -343,44 +343,44 @@ export const menu = [
         title: 'Напитки',
         products: [
             {
-                id:1,
+                id: 1,
                 title: 'Ягненок',
                 description: 'Фаршированный гречневой кашей курагой, апельсином и зеленым яблоком',
                 weigt: 'Вес: 225',
-                price: 620 ,
+                price: 620,
                 images: {
                     src: lamb,
                     alt: 'food'
                 }
             },
             {
-                id:2,
+                id: 2,
                 title: 'Индейка',
                 description: 'Фаршированная яблоком',
                 weigt: 'Вес: 225',
-                price: 450 ,
+                price: 450,
                 images: {
                     src: turkey,
                     alt: 'food'
                 }
             },
             {
-                id:3,
+                id: 3,
                 title: 'Осетр',
                 description: 'Запеченный',
                 weigt: 'Вес: 225',
-                price:  7900 ,
+                price: 7900,
                 images: {
                     src: sturgeon,
                     alt: 'food'
                 }
             },
             {
-                id:4,
+                id: 4,
                 title: 'Баклажаны',
                 description: 'Фаршированные рисом, курагой и айвой',
                 weigt: 'Вес: 225',
-                price: 3230 ,
+                price: 3230,
                 images: {
                     src: eggplant,
                     alt: 'food'

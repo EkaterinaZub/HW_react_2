@@ -12,7 +12,7 @@ export const Banner = () => {
                 <span className={styles.question}>Ещё не пробовал?</span>
             </div>
         </div>
-        
+
     )
 
 }

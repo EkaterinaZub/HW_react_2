@@ -1,9 +1,10 @@
-import styles from './PurchaseReturns.module.css'
+import styles from './PurchaseReturns.module.css';
+import { Title } from '../../common/Title/Title';
 
-export const PurchaseReturns = ()=> {
+export const PurchaseReturns = () => {
     return (
         <div className={styles.container}>
-            Purchase returns
+            <Title title='Возврат товара' />
         </div>
     )
 

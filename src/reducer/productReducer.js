@@ -2,32 +2,32 @@
 import { INCREASE_PRICE, DECREASE_PRICE } from "./types"
 
 
-const productReducer = ( state, action ) => {
-    
+const productReducer = (state, action) => {
+
     console.log(action)
     switch (action.type) {
         case INCREASE_PRICE: {
             const { id, category } = action
             const newState = state.map(item => {
 
-                if(item.url === category){
+                if (item.url === category) {
                     const products = item.products.map(el => {
-                        
-                        if (el.id === +id){
-                            
+
+                        if (el.id === +id) {
+
                             return {
-                                
+
                                 ...el,
                                 cartPrice: el.cartPrice + el.price,
                                 cartCount: el.cartCount + 1
-                                
+
                             }
-                            
+
                         }
-                        
+
                         return el
                     })
-                    return {...item, products: products}
+                    return { ...item, products: products }
                 }
                 return item
             })
@@ -36,27 +36,27 @@ const productReducer = ( state, action ) => {
         }
         case DECREASE_PRICE: {
             const { id, category } = action
-           
+
             const newState = state.map(item => {
 
-                if(item.url === category){
+                if (item.url === category) {
                     const products = item.products.map(el => {
-                        
-                        if (el.id === +id){
-                            
+
+                        if (el.id === +id) {
+
                             return {
-                                
+
                                 ...el,
                                 cartPrice: el.cartPrice - el.price,
                                 cartCount: el.cartCount - 1
-                                
+
                             }
-                            
+
                         }
-                        
+
                         return el
                     })
-                    return {...item, products: products}
+                    return { ...item, products: products }
                 }
                 return item
             })
@@ -64,7 +64,7 @@ const productReducer = ( state, action ) => {
 
         }
     }
-    
+
 
 }
 

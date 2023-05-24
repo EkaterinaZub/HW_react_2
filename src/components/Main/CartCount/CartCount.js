@@ -9,23 +9,23 @@ export const CartCount = ({ itemPrice, dispatch, category, id, cartCount, price 
     // const [state, setState] = useState(1);
     const [isShowCount, setIsShowCount] = useState(false);
     // const [price, setPrice] = useState(itemPrice)
-   
 
-    const handleInc = ({currentTarget}) => {
-        
+
+    const handleInc = ({ currentTarget }) => {
+
         // setState(state + 1)
         // setPrice(price + itemPrice);
-        dispatch ({type:INCREASE_PRICE, id: currentTarget.id, category: category})
+        dispatch({ type: INCREASE_PRICE, id: currentTarget.id, category: category })
     };
 
-    const handleDec = ({currentTarget}) => {
-       
+    const handleDec = ({ currentTarget }) => {
+
         if (cartCount === 1) {
             setIsShowCount(!isShowCount)
         } else {
             // setState(state - 1)
             // setPrice(price - itemPrice);
-            dispatch ({type:DECREASE_PRICE, id: currentTarget.id, category: category})
+            dispatch({ type: DECREASE_PRICE, id: currentTarget.id, category: category })
         }
     };
 
@@ -52,7 +52,7 @@ export const CartCount = ({ itemPrice, dispatch, category, id, cartCount, price 
     return (
         <>
             <p className={styles.price}>{price} ₽</p>
-            
+
             <button className={styles.button} onClick={handleClick}> В корзину <img src={buy} alt='buy' /> </button>
         </>
     )

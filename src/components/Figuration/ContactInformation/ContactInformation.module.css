@@ -1,0 +1,55 @@
+@import '../../../assest/fonts/fonts.css';
+
+
+
+.inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 15px;
+    margin-left: 30px;
+
+}
+
+.input {
+    width: 363px;
+    height: 60px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    background-color: #494544;
+    font-family: 'Gilroy';
+    font-size: 16px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+.span {
+    display: inline-block;
+    margin-left: 50px;
+
+    /* flex-direction: row; */
+}
+
+.firstName {
+
+    color: red;
+}
+
+.phone {
+
+    color: red;
+    margin-left: 270px;
+}
+
+@media (max-width:800px) {
+    .input {
+        width: 80%;
+
+    }
+
+    .inputs {
+        flex-wrap: wrap;
+
+    }
+
+}

@@ -1,6 +1,6 @@
 @import "../../../assest/fonts/fonts.css";
 
-.container{
+.container {
     display: flex;
     flex-direction: row;
     justify-content: start;
@@ -10,7 +10,7 @@
     background-image: url(../../../assest/images/rectangle.png);
 }
 
-.contacts{
+.contacts {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -18,21 +18,21 @@
     width: 526px;
     height: 405px;
     border-radius: 15px;
-    background-color:  #2E2B2C;
+    background-color: #2E2B2C;
     margin-left: 109px;
     padding-left: 52px;
 
 }
 
-.header{
+.header {
     font-family: 'Gilroy';
     font-size: 30px;
     font-weight: 700;
     color: #FFFFFF;
-    
+
 }
 
-.location{
+.location {
     height: 169px;
     display: flex;
     flex-direction: column;
@@ -40,19 +40,19 @@
 
 }
 
-.address{
+.address {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.img{
+.img {
     width: 24px;
     height: 24px;
     margin-right: 11px;
 }
 
-.containerAddress{
+.containerAddress {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -61,14 +61,14 @@
     height: 65px;
 }
 
-.option{
+.option {
     font-family: 'Gilroy';
     font-size: 14px;
     font-weight: 400;
     color: #CFCFCF;
 }
 
-.title{
+.title {
     font-family: 'Gilroy';
     font-size: 16px;
     font-weight: 600;
@@ -76,14 +76,14 @@
     text-align: start;
 }
 
-.booking{
+.booking {
     display: flex;
     flex-direction: row;
     align-items: center;
-    
+
 }
 
-.button{
+.button {
     width: 211px;
     height: 59px;
     background-color: #72A479;
@@ -94,36 +94,37 @@
     color: #FFFFFF;
     border-radius: 10px;
     margin-right: 33px;
-    
+
 }
 
-.telefon{
+.telefon {
     display: flex;
     flex-direction: column;
-   
+
 
 }
 
-.numer{
+.numer {
     font-family: 'Gilroy';
     font-size: 23px;
     font-weight: 700;
     color: #FFFFFF;
-   
+
 }
 
-.descriptions{
+.descriptions {
     font-family: 'Gilroy';
     font-size: 13px;
     font-weight: 400;
     color: #CFCFCF;
 }
-.networks{
+
+.networks {
     display: flex;
     flex-direction: row;
 }
 
-.text{
+.text {
     font-family: 'Gilroy';
     font-size: 16px;
     font-weight: 600;
@@ -132,17 +133,13 @@
     margin-left: 100px;
 }
 
-.item{
+.item {
     margin-right: 10px;
 }
 
-/* .here{
-    
-    width: 98px;
-    height: 112px;
-} */
 
-.weHere{
+
+.weHere {
     width: 98px;
     height: 112px;
     margin-left: 386px;

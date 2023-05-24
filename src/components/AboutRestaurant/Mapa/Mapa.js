@@ -53,9 +53,9 @@ export const Mapa = () => {
 
             </div>
 
-            
-            <img className={styles.weHere} src = {icon} alt="icon" /> 
-            
+
+            <img className={styles.weHere} src={icon} alt="icon" />
+
         </div>
 
     )
