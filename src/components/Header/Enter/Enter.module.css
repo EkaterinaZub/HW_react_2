@@ -1,0 +1,18 @@
+@import "../../../assest/fonts/fonts.css";
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90px;
+    height: 52px;
+    border-left: 1px solid #635C5A;
+
+}
+
+.enter{
+    font-family: 'Gilroy';
+    font-size: 18px;
+    font-weight: 500;
+    color: #CFCFCF;
+}

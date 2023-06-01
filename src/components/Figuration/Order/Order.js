@@ -2,6 +2,7 @@ import styles from './Order.module.css';
 import { useState} from 'react';
 import { Link } from 'react-router-dom'
 import { Button } from '../../../common/Button/Button';
+import { constants } from '../../../constants/constants';
 
 
 export const Order = ({ handleChange,error}) => {
@@ -26,8 +27,7 @@ export const Order = ({ handleChange,error}) => {
             />
             <span className={styles.input}></span>
             <span className={styles.text}>Я согласен на обработку моих перс. данных в соответствии с <Link className={styles.link}>   Условиями</Link></span>
-            {/* <button className={styles.order} type='submit' disabled={!isChecked}  >Оформить заказ</button> */}
-            <Button  type='submit' disabled={!isChecked} />
+            <Button  type='submit' disabled={!isChecked} title={constants.common.ordering} addStyles={styles.order} />
 
         </div>
     )

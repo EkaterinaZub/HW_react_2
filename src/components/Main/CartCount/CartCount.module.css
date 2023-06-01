@@ -1,14 +1,10 @@
 .button {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    
     width: 137px;
     height: 44px;
-    border: none;
-    border-radius: 10px;
-    background-color: #618967;
-    color: #FFFF;
+    
 }
+
 
 .count {
     display: flex;
@@ -32,10 +28,6 @@
 .sign {
     width: 62px;
     height: 44px;
-    color: #FFFFFF;
-    background-color: #618967;
-    border: none;
-    border-radius: 10px;
 }
 
 .price {

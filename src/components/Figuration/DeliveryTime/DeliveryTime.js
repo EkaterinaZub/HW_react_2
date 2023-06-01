@@ -9,14 +9,16 @@ export const DeliveryTime = ({ handleChange, state }) => {
     <OrderComponents title='4. Когда доставить'>
       <div className={styles.buttons}>
         <button className={isShow ? [styles.button, styles.left, styles.checked].join(' ') : [styles.button, styles.left].join(' ')} onClick={(e) => {
+          e.preventDefault()
           setIsShowp(true)
           handleChange(e)
         }}>В ближайшее время</button>
         <button className={isShow ? [styles.button, styles.centr].join(' ') : [styles.button, styles.centr, styles.checked].join(' ')} onClick={(e) => {
+          e.preventDefault()
           setIsShowp(false)
           handleChange(e)
         }}>Ко времени</button>
-        <button className={[styles.button, styles.right].join(' ')}>Укажите время</button>
+        <button type='button'className={[styles.button, styles.right].join(' ')}>Укажите время</button>
 
         <div className={styles.person}>
           <span className={styles.span}>Кол-во персон</span>
@@ -25,6 +27,7 @@ export const DeliveryTime = ({ handleChange, state }) => {
             name='persons'
             value={+state.persons - 1}
             onClick={(event) => {
+              event.preventDefault()
               if (state.persons > 1) {
                 handleChange(event)
               }
@@ -35,6 +38,7 @@ export const DeliveryTime = ({ handleChange, state }) => {
             name='persons'
             value={+state.persons + 1}
             onClick={(event) => {
+              event.preventDefault()
               handleChange(event)
             }}>+</button>
         </div>

@@ -11,9 +11,12 @@
     justify-content: space-evenly;
 
 }
+.order{
+    width: 209px;
+    height: 51px;
+}
 
 .text {
-    /* display: flex; */
     font-size: 13px;
     font-family: 'Gilroy';
     font-weight: 500;

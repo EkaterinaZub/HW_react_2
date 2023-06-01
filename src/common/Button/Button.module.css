@@ -1,8 +1,9 @@
 @import '../../assest/fonts/fonts.css';
 
 .button {
-    width: 209px;
-    height: 51px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     font-family: 'Gilroy';
     font-weight: 700;
     color: white;

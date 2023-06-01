@@ -13,10 +13,12 @@ export const Delivery = ({ state, handleChange, isShow, setIsShowp, error }) => 
             <div className={styles.buttons}>
                 <button className={isShow ? [styles.delivery, styles.checked].join(' ') : styles.delivery} name='delivery' value='delivery'
                     onClick={(e) => {
+                        e.preventDefault()
                         setIsShowp(true)
                         handleChange(e)
                     }}>Доставка</button>
                 <button className={isShow ? styles.pikap : [styles.pikap, styles.checked].join(' ')} name='delivery' value='pikap' onClick={(e) => {
+                    e.preventDefault()
                     setIsShowp(false)
                     handleChange(e)
                 }}>Самовывоз</button>

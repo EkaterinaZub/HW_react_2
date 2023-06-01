@@ -4,7 +4,7 @@ import { INCREASE_PRICE, DECREASE_PRICE } from "./types"
 
 const productReducer = (state, action) => {
 
-    console.log(action)
+    // console.log(action)
     switch (action.type) {
         case INCREASE_PRICE: {
             const { id, category } = action

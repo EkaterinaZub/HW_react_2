@@ -9,18 +9,27 @@ import { Footer } from './components/Footer/Footer';
 import { AboutRestaurant } from './components/AboutRestaurant/AboutRestaurant';
 import { Share } from './components/Share/Share';
 import { Conditions } from './components/Conditions/Conditions';
-import { useEffect, useState } from 'react';
+import { createContext, useReducer, useEffect, useState } from 'react';
+import productReducer from './reducer/productReducer';
+import { initialState } from './reducer/initialState';
 import { PurchaseReturns } from './components/PurchaseReturns/PurchaseReturns';
 import { Figuration } from './components/Figuration/Figuration';
+import { CartProduct } from './components/Main/CartProducr/CartProduct';
+import { constants } from './constants/constants';
+import { Modal } from './components/Modal/Modal';
 
 
-
+export const AppContext = createContext()
 
 export const App = () => {
   let { state } = useLocation();
   const [showMenu, setShowMenu] = useState(false);
   const [weather, setWeather] = useState({});
-
+  const [stat, dispatch] = useReducer(productReducer, initialState);
+  const [basketCaunt, setBasketCaunt] = useState(0)
+  const [modal, setModal] = useState(false)
+  // console.log(modal)
+  
   useEffect(() => {
     fetch('https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&current_weather=true&hourly=temperature_2m,relativehumidity_2m,windspeed_10m')
       .then((response) => response.json())
@@ -42,25 +51,31 @@ export const App = () => {
 
 
   return (
+    <AppContext.Provider value={{stat, dispatch,basketCaunt, setBasketCaunt,setModal, modal}} >
     <div className="App">
+    <Modal modal={modal} setModal={setModal}/>
       <Header showMenu={showMenu} setShowMenu={setShowMenu} />
+      
       {!state && <Banner />}
       <Navigation />
+      
       <Routes>
-        <Route path='/' element={<ColdAppetizers />} />
-        <Route path='/:url' element={<ColdAppetizers />} />
-        <Route path='/basket' element={<Basket />} />
-        <Route path='/about_the_restaurant' element={<AboutRestaurant />} />
-        <Route path='/stock' element={<Share />} />
-        <Route path='/return' element={<PurchaseReturns />} />
-        <Route path='/conditions' element={<Conditions />} />
-        <Route path='/figuration' element={<Figuration />} />
+        <Route path={constants.routs.home} element={<ColdAppetizers />} />
+        <Route path={constants.routs.category}  element={<ColdAppetizers />} />
+        <Route path={constants.routs.cartProduct} element={<CartProduct/>}/>
+        <Route path={constants.routs.basket} element={<Basket />} />
+        <Route path={constants.routs.about} element={<AboutRestaurant />} />
+        <Route path={constants.routs.share} element={<Share />} />
+        <Route path={constants.routs.return} element={<PurchaseReturns />} />
+        <Route path={constants.routs.conditons} element={<Conditions />} />
+        <Route path={constants.routs.figurations} element={<Figuration />} />
       </Routes>
-
+      
       <Footer weather={weather} showMenu={showMenu} setShowMenu={setShowMenu} />
 
-
+      
     </div>
+    </AppContext.Provider>
   );
 }
 

@@ -15,13 +15,27 @@ export const initialState = [
                 id: 1,
                 title: 'Ягненок',
                 description: 'Фаршированный гречневой кашей курагой, апельсином и зеленым яблоком',
-                weigt: 'Вес: 225',
+                weigt: 'Вес: 210',
                 price: 620,
-                cartPrice: 620,
-                cartCount: 1,
+                cartPrice: 0,
+                cartCount: 0,
                 images: {
                     src: lamb,
                     alt: 'food'
+                },
+                elements: {
+                    squirrels: 'белки',
+                    fats:'жиры',
+                    carbohydrates:'углеводы',
+                    kilocalories: 'Ккал',
+                    weigtElem:'Вес'
+                },
+                calories: {
+                    squirrelsCal: '17.23',
+                    fatsCal:'7.63',
+                    carbohydratesCal:'22.35',
+                    kilocaloriesCal: '235',
+                    weigtElemCal: '210 г'
                 }
             },
             {
@@ -30,24 +44,52 @@ export const initialState = [
                 description: 'Фаршированная яблоком',
                 weigt: 'Вес: 225',
                 price: 450,
-                cartPrice: 450,
-                cartCount: 1,
+                cartPrice: 0,
+                cartCount: 0,
                 images: {
                     src: turkey,
                     alt: 'food'
+                },
+                elements: {
+                    squirrels: 'белки',
+                    fats:'жиры',
+                    carbohydrates:'углеводы',
+                    kilocalories: 'Ккал',
+                    weigtElem:'Вес'
+                },
+                calories: {
+                    squirrelsCal: '17.34',
+                    fatsCal:'7.80',
+                    carbohydratesCal:'22.87',
+                    kilocaloriesCal: '245',
+                    weigtElemCal: '225 г'
                 }
             },
             {
                 id: 3,
                 title: 'Осетр',
                 description: 'Запеченный',
-                weigt: 'Вес: 225',
+                weigt: 'Вес: 245',
                 price: 7900,
-                cartPrice: 7900,
-                cartCount: 1,
+                cartPrice: 0,
+                cartCount: 0,
                 images: {
                     src: sturgeon,
                     alt: 'food'
+                },
+                elements: {
+                    squirrels: 'белки',
+                    fats:'жиры',
+                    carbohydrates:'углеводы',
+                    kilocalories: 'Ккал',
+                    weigtElem:'Вес'
+                },
+                calories: {
+                    squirrelsCal: '17.32',
+                    fatsCal:'7.98',
+                    carbohydratesCal:'22.65',
+                    kilocaloriesCal: '345',
+                    weigtElemCal: '245 г'
                 }
             },
             {
@@ -56,11 +98,25 @@ export const initialState = [
                 description: 'Фаршированные рисом, курагой и айвой',
                 weigt: 'Вес: 225',
                 price: 3230,
-                cartPrice: 3230,
-                cartCount: 1,
+                cartPrice: 0,
+                cartCount: 0,
                 images: {
                     src: eggplant,
                     alt: 'food'
+                },
+                elements: {
+                    squirrels: 'белки',
+                    fats:'жиры',
+                    carbohydrates:'углеводы',
+                    kilocalories: 'Ккал',
+                    weigtElem:'Вес'
+                },
+                calories: {
+                    squirrelsCal: '17.23',
+                    fatsCal:'7.63',
+                    carbohydratesCal:'22.35',
+                    kilocaloriesCal: '235',
+                    weigtElemCal: '225 г'
                 }
             }
 
@@ -77,11 +133,25 @@ export const initialState = [
                 description: 'Фаршированный гречневой кашей курагой, апельсином и зеленым яблоком',
                 weigt: 'Вес: 225',
                 price: 620,
-                cartPrice: 620,
-                cartCount: 1,
+                cartPrice: 0,
+                cartCount: 0,
                 images: {
                     src: lamb,
                     alt: 'food'
+                },
+                elements: {
+                    squirrels: 'белки',
+                    fats:'жиры',
+                    carbohydrates:'углеводы',
+                    kilocalories: 'Ккал',
+                    weigtElem:'Вес'
+                },
+                calories: {
+                    squirrelsCal: '17.23',
+                    fatsCal:'7.63',
+                    carbohydratesCal:'22.35',
+                    kilocaloriesCal: '235',
+                    weigtElemCal: '210 г'
                 }
             },
 
@@ -92,11 +162,25 @@ export const initialState = [
                 description: 'Фаршированные рисом, курагой и айвой',
                 weigt: 'Вес: 225',
                 price: 3230,
-                cartPrice: 3230,
-                cartCount: 1,
+                cartPrice: 0,
+                cartCount: 0,
                 images: {
                     src: eggplant,
                     alt: 'food'
+                },
+                elements: {
+                    squirrels: 'белки',
+                    fats:'жиры',
+                    carbohydrates:'углеводы',
+                    kilocalories: 'Ккал',
+                    weigtElem:'Вес'
+                },
+                calories: {
+                    squirrelsCal: '17.23',
+                    fatsCal:'7.63',
+                    carbohydratesCal:'22.35',
+                    kilocaloriesCal: '235',
+                    weigtElemCal: '225 г'
                 }
             }
 
@@ -114,11 +198,24 @@ export const initialState = [
                 description: 'Фаршированный гречневой кашей курагой, апельсином и зеленым яблоком',
                 weigt: 'Вес: 225',
                 price: 620,
-                cartPrice: 620,
-                cartCount: 1,
+                cartPrice: 0,
+                cartCount: 0,
                 images: {
                     src: lamb,
                     alt: 'food'
+                }, elements: {
+                    squirrels: 'белки',
+                    fats:'жиры',
+                    carbohydrates:'углеводы',
+                    kilocalories: 'Ккал',
+                    weigtElem:'Вес'
+                },
+                calories: {
+                    squirrelsCal: '17.23',
+                    fatsCal:'7.63',
+                    carbohydratesCal:'22.35',
+                    kilocaloriesCal: '235',
+                    weigtElemCal: '210 г'
                 }
             },
 
@@ -128,11 +225,25 @@ export const initialState = [
                 description: 'Запеченный',
                 weigt: 'Вес: 225',
                 price: 7900,
-                cartPrice: 7900,
-                cartCount: 1,
+                cartPrice: 0,
+                cartCount: 0,
                 images: {
                     src: sturgeon,
                     alt: 'food'
+                },
+                elements: {
+                    squirrels: 'белки',
+                    fats:'жиры',
+                    carbohydrates:'углеводы',
+                    kilocalories: 'Ккал',
+                    weigtElem:'Вес'
+                },
+                calories: {
+                    squirrelsCal: '17.32',
+                    fatsCal:'7.98',
+                    carbohydratesCal:'22.65',
+                    kilocaloriesCal: '345',
+                    weigtElemCal: '245 г'
                 }
             },
             {
@@ -141,11 +252,25 @@ export const initialState = [
                 description: 'Фаршированные рисом, курагой и айвой',
                 weigt: 'Вес: 225',
                 price: 3230,
-                cartPrice: 3230,
-                cartCount: 1,
+                cartPrice: 0,
+                cartCount: 0,
                 images: {
                     src: eggplant,
                     alt: 'food'
+                },
+                elements: {
+                    squirrels: 'белки',
+                    fats:'жиры',
+                    carbohydrates:'углеводы',
+                    kilocalories: 'Ккал',
+                    weigtElem:'Вес'
+                },
+                calories: {
+                    squirrelsCal: '17.23',
+                    fatsCal:'7.63',
+                    carbohydratesCal:'22.35',
+                    kilocaloriesCal: '235',
+                    weigtElemCal: '225 г'
                 }
             }
 
@@ -163,11 +288,24 @@ export const initialState = [
                 description: 'Фаршированный гречневой кашей курагой, апельсином и зеленым яблоком',
                 weigt: 'Вес: 225',
                 price: 620,
-                cartPrice: 620,
-                cartCount: 1,
+                cartPrice: 0,
+                cartCount: 0,
                 images: {
                     src: lamb,
                     alt: 'food'
+                }, elements: {
+                    squirrels: 'белки',
+                    fats:'жиры',
+                    carbohydrates:'углеводы',
+                    kilocalories: 'Ккал',
+                    weigtElem:'Вес'
+                },
+                calories: {
+                    squirrelsCal: '17.23',
+                    fatsCal:'7.63',
+                    carbohydratesCal:'22.35',
+                    kilocaloriesCal: '235',
+                    weigtElemCal: '210 г'
                 }
             },
 
@@ -177,11 +315,25 @@ export const initialState = [
                 description: 'Запеченный',
                 weigt: 'Вес: 225',
                 price: 7900,
-                cartPrice: 7900,
-                cartCount: 1,
+                cartPrice: 0,
+                cartCount: 0,
                 images: {
                     src: sturgeon,
                     alt: 'food'
+                },
+                elements: {
+                    squirrels: 'белки',
+                    fats:'жиры',
+                    carbohydrates:'углеводы',
+                    kilocalories: 'Ккал',
+                    weigtElem:'Вес'
+                },
+                calories: {
+                    squirrelsCal: '17.32',
+                    fatsCal:'7.98',
+                    carbohydratesCal:'22.65',
+                    kilocaloriesCal: '345',
+                    weigtElemCal: '245 г'
                 }
             },
             {
@@ -190,11 +342,25 @@ export const initialState = [
                 description: 'Фаршированные рисом, курагой и айвой',
                 weigt: 'Вес: 225',
                 price: 3230,
-                cartPrice: 3230,
-                cartCount: 1,
+                cartPrice: 0,
+                cartCount: 0,
                 images: {
                     src: eggplant,
                     alt: 'food'
+                },
+                elements: {
+                    squirrels: 'белки',
+                    fats:'жиры',
+                    carbohydrates:'углеводы',
+                    kilocalories: 'Ккал',
+                    weigtElem:'Вес'
+                },
+                calories: {
+                    squirrelsCal: '17.23',
+                    fatsCal:'7.63',
+                    carbohydratesCal:'22.35',
+                    kilocaloriesCal: '235',
+                    weigtElemCal: '225 г'
                 }
             }
 
@@ -212,11 +378,24 @@ export const initialState = [
                 description: 'Фаршированный гречневой кашей курагой, апельсином и зеленым яблоком',
                 weigt: 'Вес: 225',
                 price: 620,
-                cartPrice: 620,
-                cartCount: 1,
+                cartPrice: 0,
+                cartCount: 0,
                 images: {
                     src: lamb,
                     alt: 'food'
+                }, elements: {
+                    squirrels: 'белки',
+                    fats:'жиры',
+                    carbohydrates:'углеводы',
+                    kilocalories: 'Ккал',
+                    weigtElem:'Вес'
+                },
+                calories: {
+                    squirrelsCal: '17.23',
+                    fatsCal:'7.63',
+                    carbohydratesCal:'22.35',
+                    kilocaloriesCal: '235',
+                    weigtElemCal: '210 г'
                 }
             },
             {
@@ -225,11 +404,24 @@ export const initialState = [
                 description: 'Фаршированная яблоком',
                 weigt: 'Вес: 225',
                 price: 450,
-                cartPrice: 450,
-                cartCount: 1,
+                cartPrice: 0,
+                cartCount: 0,
                 images: {
                     src: turkey,
                     alt: 'food'
+                },elements: {
+                    squirrels: 'белки',
+                    fats:'жиры',
+                    carbohydrates:'углеводы',
+                    kilocalories: 'Ккал',
+                    weigtElem:'Вес'
+                },
+                calories: {
+                    squirrelsCal: '17.34',
+                    fatsCal:'7.80',
+                    carbohydratesCal:'22.87',
+                    kilocaloriesCal: '245',
+                    weigtElemCal: '225 г'
                 }
             },
             {
@@ -238,11 +430,25 @@ export const initialState = [
                 description: 'Запеченный',
                 weigt: 'Вес: 225',
                 price: 7900,
-                cartPrice: 7900,
-                cartCount: 1,
+                cartPrice: 0,
+                cartCount: 0,
                 images: {
                     src: sturgeon,
                     alt: 'food'
+                },
+                elements: {
+                    squirrels: 'белки',
+                    fats:'жиры',
+                    carbohydrates:'углеводы',
+                    kilocalories: 'Ккал',
+                    weigtElem:'Вес'
+                },
+                calories: {
+                    squirrelsCal: '17.32',
+                    fatsCal:'7.98',
+                    carbohydratesCal:'22.65',
+                    kilocaloriesCal: '345',
+                    weigtElemCal: '245 г'
                 }
             },
             {
@@ -251,11 +457,25 @@ export const initialState = [
                 description: 'Фаршированные рисом, курагой и айвой',
                 weigt: 'Вес: 225',
                 price: 3230,
-                cartPrice: 3230,
-                cartCount: 1,
+                cartPrice: 0,
+                cartCount: 0,
                 images: {
                     src: eggplant,
                     alt: 'food'
+                },
+                elements: {
+                    squirrels: 'белки',
+                    fats:'жиры',
+                    carbohydrates:'углеводы',
+                    kilocalories: 'Ккал',
+                    weigtElem:'Вес'
+                },
+                calories: {
+                    squirrelsCal: '17.23',
+                    fatsCal:'7.63',
+                    carbohydratesCal:'22.35',
+                    kilocaloriesCal: '235',
+                    weigtElemCal: '225 г'
                 }
             }
 
@@ -273,11 +493,24 @@ export const initialState = [
                 description: 'Фаршированный гречневой кашей курагой, апельсином и зеленым яблоком',
                 weigt: 'Вес: 225',
                 price: 620,
-                cartPrice: 620,
-                cartCount: 1,
+                cartPrice: 0,
+                cartCount: 0,
                 images: {
                     src: lamb,
                     alt: 'food'
+                }, elements: {
+                    squirrels: 'белки',
+                    fats:'жиры',
+                    carbohydrates:'углеводы',
+                    kilocalories: 'Ккал',
+                    weigtElem:'Вес'
+                },
+                calories: {
+                    squirrelsCal: '17.23',
+                    fatsCal:'7.63',
+                    carbohydratesCal:'22.35',
+                    kilocaloriesCal: '235',
+                    weigtElemCal: '210 г'
                 }
             },
             {
@@ -286,11 +519,25 @@ export const initialState = [
                 description: 'Фаршированная яблоком',
                 weigt: 'Вес: 225',
                 price: 450,
-                cartPrice: 450,
-                cartCount: 1,
+                cartPrice: 0,
+                cartCount: 0,
                 images: {
                     src: turkey,
                     alt: 'food'
+                },
+                elements: {
+                    squirrels: 'белки',
+                    fats:'жиры',
+                    carbohydrates:'углеводы',
+                    kilocalories: 'Ккал',
+                    weigtElem:'Вес'
+                },
+                calories: {
+                    squirrelsCal: '17.34',
+                    fatsCal:'7.80',
+                    carbohydratesCal:'22.87',
+                    kilocaloriesCal: '245',
+                    weigtElemCal: '225 г'
                 }
             },
             {
@@ -299,11 +546,25 @@ export const initialState = [
                 description: 'Запеченный',
                 weigt: 'Вес: 225',
                 price: 7900,
-                cartPrice: 7900,
-                cartCount: 1,
+                cartPrice: 0,
+                cartCount: 0,
                 images: {
                     src: sturgeon,
                     alt: 'food'
+                },
+                elements: {
+                    squirrels: 'белки',
+                    fats:'жиры',
+                    carbohydrates:'углеводы',
+                    kilocalories: 'Ккал',
+                    weigtElem:'Вес'
+                },
+                calories: {
+                    squirrelsCal: '17.32',
+                    fatsCal:'7.98',
+                    carbohydratesCal:'22.65',
+                    kilocaloriesCal: '345',
+                    weigtElemCal: '245 г'
                 }
             },
             {
@@ -312,11 +573,25 @@ export const initialState = [
                 description: 'Фаршированные рисом, курагой и айвой',
                 weigt: 'Вес: 225',
                 price: 3230,
-                cartPrice: 3230,
-                cartCount: 1,
+                cartPrice: 0,
+                cartCount: 0,
                 images: {
                     src: eggplant,
                     alt: 'food'
+                },
+                elements: {
+                    squirrels: 'белки',
+                    fats:'жиры',
+                    carbohydrates:'углеводы',
+                    kilocalories: 'Ккал',
+                    weigtElem:'Вес'
+                },
+                calories: {
+                    squirrelsCal: '17.23',
+                    fatsCal:'7.63',
+                    carbohydratesCal:'22.35',
+                    kilocaloriesCal: '235',
+                    weigtElemCal: '225 г'
                 }
             }
 
@@ -335,11 +610,24 @@ export const initialState = [
                 description: 'Фаршированный гречневой кашей курагой, апельсином и зеленым яблоком',
                 weigt: 'Вес: 225',
                 price: 620,
-                cartPrice: 620,
-                cartCount: 1,
+                cartPrice: 0,
+                cartCount: 0,
                 images: {
                     src: lamb,
                     alt: 'food'
+                }, elements: {
+                    squirrels: 'белки',
+                    fats:'жиры',
+                    carbohydrates:'углеводы',
+                    kilocalories: 'Ккал',
+                    weigtElem:'Вес'
+                },
+                calories: {
+                    squirrelsCal: '17.23',
+                    fatsCal:'7.63',
+                    carbohydratesCal:'22.35',
+                    kilocaloriesCal: '235',
+                    weigtElemCal: '210 г'
                 }
             },
             {
@@ -348,11 +636,25 @@ export const initialState = [
                 description: 'Фаршированная яблоком',
                 weigt: 'Вес: 225',
                 price: 450,
-                cartPrice: 450,
-                cartCount: 1,
+                cartPrice: 0,
+                cartCount: 0,
                 images: {
                     src: turkey,
                     alt: 'food'
+                },
+                elements: {
+                    squirrels: 'белки',
+                    fats:'жиры',
+                    carbohydrates:'углеводы',
+                    kilocalories: 'Ккал',
+                    weigtElem:'Вес'
+                },
+                calories: {
+                    squirrelsCal: '17.34',
+                    fatsCal:'7.80',
+                    carbohydratesCal:'22.87',
+                    kilocaloriesCal: '245',
+                    weigtElemCal: '225 г'
                 }
             },
             {
@@ -361,11 +663,25 @@ export const initialState = [
                 description: 'Запеченный',
                 weigt: 'Вес: 225',
                 price: 7900,
-                cartPrice: 7900,
-                cartCount: 1,
+                cartPrice: 0,
+                cartCount: 0,
                 images: {
                     src: sturgeon,
                     alt: 'food'
+                },
+                elements: {
+                    squirrels: 'белки',
+                    fats:'жиры',
+                    carbohydrates:'углеводы',
+                    kilocalories: 'Ккал',
+                    weigtElem:'Вес'
+                },
+                calories: {
+                    squirrelsCal: '17.32',
+                    fatsCal:'7.98',
+                    carbohydratesCal:'22.65',
+                    kilocaloriesCal: '345',
+                    weigtElemCal: '245 г'
                 }
             },
             {
@@ -374,11 +690,24 @@ export const initialState = [
                 description: 'Фаршированные рисом, курагой и айвой',
                 weigt: 'Вес: 225',
                 price: 3230,
-                cartPrice: 3230,
-                cartCount: 1,
+                cartPrice: 0,
+                cartCount: 0,
                 images: {
                     src: eggplant,
                     alt: 'food'
+                },elements: {
+                    squirrels: 'белки',
+                    fats:'жиры',
+                    carbohydrates:'углеводы',
+                    kilocalories: 'Ккал',
+                    weigtElem:'Вес'
+                },
+                calories: {
+                    squirrelsCal: '17.23',
+                    fatsCal:'7.63',
+                    carbohydratesCal:'22.35',
+                    kilocaloriesCal: '235',
+                    weigtElemCal: '225 г'
                 }
             }
 
@@ -396,11 +725,24 @@ export const initialState = [
                 description: 'Фаршированный гречневой кашей курагой, апельсином и зеленым яблоком',
                 weigt: 'Вес: 225',
                 price: 620,
-                cartPrice: 620,
-                cartCount: 1,
+                cartPrice: 0,
+                cartCount: 0,
                 images: {
                     src: lamb,
                     alt: 'food'
+                }, elements: {
+                    squirrels: 'белки',
+                    fats:'жиры',
+                    carbohydrates:'углеводы',
+                    kilocalories: 'Ккал',
+                    weigtElem:'Вес'
+                },
+                calories: {
+                    squirrelsCal: '17.23',
+                    fatsCal:'7.63',
+                    carbohydratesCal:'22.35',
+                    kilocaloriesCal: '235',
+                    weigtElemCal: '210 г'
                 }
             },
             {
@@ -409,11 +751,25 @@ export const initialState = [
                 description: 'Фаршированная яблоком',
                 weigt: 'Вес: 225',
                 price: 450,
-                cartPrice: 450,
-                cartCount: 1,
+                cartPrice: 0,
+                cartCount: 0,
                 images: {
                     src: turkey,
                     alt: 'food'
+                },
+                elements: {
+                    squirrels: 'белки',
+                    fats:'жиры',
+                    carbohydrates:'углеводы',
+                    kilocalories: 'Ккал',
+                    weigtElem:'Вес'
+                },
+                calories: {
+                    squirrelsCal: '17.34',
+                    fatsCal:'7.80',
+                    carbohydratesCal:'22.87',
+                    kilocaloriesCal: '245',
+                    weigtElemCal: '225 г'
                 }
             },
             {
@@ -422,11 +778,25 @@ export const initialState = [
                 description: 'Запеченный',
                 weigt: 'Вес: 225',
                 price: 7900,
-                cartPrice: 7900,
-                cartCount: 1,
+                cartPrice: 0,
+                cartCount: 0,
                 images: {
                     src: sturgeon,
                     alt: 'food'
+                },
+                elements: {
+                    squirrels: 'белки',
+                    fats:'жиры',
+                    carbohydrates:'углеводы',
+                    kilocalories: 'Ккал',
+                    weigtElem:'Вес'
+                },
+                calories: {
+                    squirrelsCal: '17.32',
+                    fatsCal:'7.98',
+                    carbohydratesCal:'22.65',
+                    kilocaloriesCal: '345',
+                    weigtElemCal: '245 г'
                 }
             },
             {
@@ -435,11 +805,24 @@ export const initialState = [
                 description: 'Фаршированные рисом, курагой и айвой',
                 weigt: 'Вес: 225',
                 price: 3230,
-                cartPrice: 3230,
-                cartCount: 1,
+                cartPrice: 0,
+                cartCount: 0,
                 images: {
                     src: eggplant,
                     alt: 'food'
+                },elements: {
+                    squirrels: 'белки',
+                    fats:'жиры',
+                    carbohydrates:'углеводы',
+                    kilocalories: 'Ккал',
+                    weigtElem:'Вес'
+                },
+                calories: {
+                    squirrelsCal: '17.23',
+                    fatsCal:'7.63',
+                    carbohydratesCal:'22.35',
+                    kilocaloriesCal: '235',
+                    weigtElemCal: '225 г'
                 }
             }
 
