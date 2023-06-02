@@ -2,7 +2,7 @@ import styles from './Delivery.module.css'
 // import { useState } from 'react';
 import clock from '../../../assest/images/clock.svg'
 import { OrderComponents } from '../OrderComponents/OrderComponents'
-
+// import { Clock } from '../../../assest/images/clock'
 
 export const Delivery = ({ state, handleChange, isShow, setIsShowp, error }) => {
 
@@ -26,6 +26,11 @@ export const Delivery = ({ state, handleChange, isShow, setIsShowp, error }) => 
                 {isShow && (
 
                     <div className={styles.clock}>
+                    {/* <Clock width = '28'
+                        height= '19'
+                        fill= 'green'
+                        stroke='red'
+                    /> */}
                         <img src={clock} alt="clock"></img>
                         <span className={styles.span}>Доставим через 1 час 30 минут</span>
                     </div>

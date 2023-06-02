@@ -10,25 +10,26 @@ export const Modal = ({titleButton,onSubmit, userAuthData, handleChange,error})=
     
 
     
-    console.log(userAuthData)
+    console.log(titleButton)
     
     
-    if (! modal) return null
+    if ( !modal) return null
+    
     
     return(
         <div className={styles.modal} onClick={()=> setModal(false)}>
-        {/* <div className={styles.content} onClick={(e)=> e.stopPropagation()}> */}
-        <form className={styles.content} onClick={(e)=> e.stopPropagation()}>
         
+        <form className={styles.content} onClick={(e)=> e.stopPropagation()}>
+        {error && <span className={styles.error}>{error}</span>}
             <div className={styles.content}>
             
 
-            {error && <span className={styles.error}>{error}</span>}
-                <label htmlFor='email-address'>
+            
+                <label htmlFor='email-address' className={styles.label}>
                 Email address:
 
                 </label>
-                <input
+                <input className={styles.input}
                 type='email'
                 name='email'
                 id='email-address'
@@ -40,11 +41,11 @@ export const Modal = ({titleButton,onSubmit, userAuthData, handleChange,error})=
             </div>
 
             <div className={styles.content}>
-                <label htmlFor='password'>
+                <label htmlFor='password' className={styles.label}>
                 Password:
 
                 </label>
-                <input
+                <input className={styles.input}
                 type='password'
                 name='password'
                 id='password'
@@ -57,12 +58,13 @@ export const Modal = ({titleButton,onSubmit, userAuthData, handleChange,error})=
             <button className={styles.button}
             type="submit"
             onClick={onSubmit}
+            title={titleButton}
             >
-            {titleButton}
+           {titleButton}
             </button>
         </form>
         </div>
 
-        // </div>
+      
     )
 }

@@ -1,3 +1,4 @@
+import styles from './Signup.module.css'
 import { useState } from "react"
 import { createUserWithEmailAndPassword } from 'firebase/auth'
 import { auth } from '../../../firebase'
@@ -5,7 +6,7 @@ import { Modal } from "../Modal"
 
 
 
-export const Signup = () => {
+export const Signup = ({setShowLogin}) => {
 
     const [userAuthData, setUserAuthData] = useState({ email: '', password: '' })
     const [error, setError] = useState('')
@@ -30,6 +31,8 @@ export const Signup = () => {
 
     return (
         <div>
+         <div className={styles.cabinet}>
+            <span>Регистрация</span>
             <Modal
                 onSubmit={onSubmit}
                 handleChange={handleChange}
@@ -38,6 +41,10 @@ export const Signup = () => {
                 titleButton='Зарегистрироваться'
 
             />
+            <div>
+                    <span className={styles.registration} onClick={()=>setShowLogin(true)}>Аккаунт существующий</span>
+                </div>
+            </div>
         </div>
     )
 }

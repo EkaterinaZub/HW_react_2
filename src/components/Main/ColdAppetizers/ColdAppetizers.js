@@ -40,7 +40,7 @@ export const ColdAppetizers = () => {
                     products.map(item =>
                         
                         <div className={styles.cards} key={item.id}>
-                            <Link  to = {`${item.url, item.id}`}  item={item} state='true'><img className={styles.lamb} src={item.images.src} alt={item.images.alt} id={item.id} /></Link>
+                            <Link  to = {`/${cardsUrl}/${item.id}`}  item={item} state='true'><img className={styles.lamb} src={item.images.src} alt={item.images.alt} id={item.id} /></Link>
                             
                             <div className={styles.header}>
                                 <h3 className={styles.name}>{item.title}</h3>

@@ -17,6 +17,7 @@ import { Figuration } from './components/Figuration/Figuration';
 import { CartProduct } from './components/Main/CartProducr/CartProduct';
 import { constants } from './constants/constants';
 import { Modal } from './components/Modal/Modal';
+import { Preloader } from './components/Preloader/Preloader';
 
 
 export const AppContext = createContext()
@@ -28,9 +29,12 @@ export const App = () => {
   const [stat, dispatch] = useReducer(productReducer, initialState);
   const [basketCaunt, setBasketCaunt] = useState(0)
   const [modal, setModal] = useState(false)
+  const [isPreloader, setIsPreloader] = useState(false)
   // console.log(modal)
   
   useEffect(() => {
+    setIsPreloader(true)
+    setTimeout ( ()=>{
     fetch('https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&current_weather=true&hourly=temperature_2m,relativehumidity_2m,windspeed_10m')
       .then((response) => response.json())
       .then((weather) => {
@@ -45,14 +49,18 @@ export const App = () => {
         };
 
         setWeather(weatherData)
-      });
-    //  console.log(weatherData)
+      }).finally(()=> setIsPreloader(false))
+
+    }, 1000)
+    
   }, [])
 
 
   return (
     <AppContext.Provider value={{stat, dispatch,basketCaunt, setBasketCaunt,setModal, modal}} >
     <div className="App">
+    {isPreloader ? <Preloader/>: 
+    <>
     <Modal modal={modal} setModal={setModal}/>
       <Header showMenu={showMenu} setShowMenu={setShowMenu} />
       
@@ -73,7 +81,7 @@ export const App = () => {
       
       <Footer weather={weather} showMenu={showMenu} setShowMenu={setShowMenu} />
 
-      
+      </>}
     </div>
     </AppContext.Provider>
   );
