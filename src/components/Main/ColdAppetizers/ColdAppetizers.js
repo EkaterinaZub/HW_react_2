@@ -13,9 +13,9 @@ import buy from '../../../assest/images/buy.svg'
 import { AppContext } from '../../../App';
 
 export const ColdAppetizers = () => {
-    const {stat, dispatch} = useContext(AppContext)
-    
-    
+    const { stat, dispatch } = useContext(AppContext)
+
+
 
     // console.log(state)
 
@@ -29,28 +29,28 @@ export const ColdAppetizers = () => {
         return item.url === url
     })
 
-    
-   
+
+
     return (
-        
+
         <div className={styles.container} key={cardsUrl}>
             <Title title={title} />
             <div className={styles.dishes} >
                 {
                     products.map(item =>
-                        
+
                         <div className={styles.cards} key={item.id}>
-                            <Link  to = {`/${cardsUrl}/${item.id}`}  item={item} state='true'><img className={styles.lamb} src={item.images.src} alt={item.images.alt} id={item.id} /></Link>
-                            
+                            <Link to={`/${cardsUrl}/${item.id}`} item={item} state='true'><img className={styles.lamb} src={item.images.src} alt={item.images.alt} id={item.id} /></Link>
+
                             <div className={styles.header}>
                                 <h3 className={styles.name}>{item.title}</h3>
                                 <span className={styles.weigt}>{item.weigt}</span>
                             </div>
                             <span className={styles.description}>{item.description}</span>
                             <div className={styles.buy}>
-                                <CartCount itemPrice={item.cartPrice} dispatch={dispatch}
-                                 category={cardsUrl} id={item.id} src={buy}
-                                 cartCount={item.cartCount} title='В корзину' price={item.price} />
+                                <CartCount product={item} dispatch={dispatch}
+                                    category={cardsUrl} src={buy}
+                                    title='В корзину' />
                             </div>
                         </div>)
                 }

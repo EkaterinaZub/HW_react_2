@@ -1,5 +1,5 @@
 /* eslint-disable default-case */
-import { INCREASE_PRICE, DECREASE_PRICE } from "./types"
+import { INCREASE_PRICE, DECREASE_PRICE, DELETE_PRODUCT } from "./types"
 
 
 const productReducer = (state, action) => {
@@ -9,7 +9,7 @@ const productReducer = (state, action) => {
         case INCREASE_PRICE: {
             const { id, category } = action
             const newState = state.map(item => {
-
+                
                 if (item.url === category) {
                     const products = item.products.map(el => {
 
@@ -49,6 +49,38 @@ const productReducer = (state, action) => {
                                 ...el,
                                 cartPrice: el.cartPrice - el.price,
                                 cartCount: el.cartCount - 1
+
+                            }
+
+                        }
+
+                        return el
+                    })
+                    return { ...item, products: products }
+                }
+                return item
+            })
+            return newState
+
+        }
+
+
+
+        case DELETE_PRODUCT: {
+            const { id, category } = action
+
+            const newState = state.map(item => {
+
+                if (item.url === category) {
+                    const products = item.products.map(el => {
+
+                        if (el.id === +id) {
+
+                            return {
+
+                                ...el,
+                                cartPrice:  0,
+                                cartCount:  0
 
                             }
 

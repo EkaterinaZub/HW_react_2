@@ -1,0 +1,27 @@
+@import "../../../assest/fonts/fonts.css";
+
+
+.cabinet {
+    display: flex;
+    flex-direction: column;
+}
+
+.signup {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-family: 'Gilroy';
+    font-weight: 700;
+    margin-bottom: 15px;
+
+}
+
+.account {
+    color: #FFFFFF;
+    font-size: 15px;
+}
+
+.link {
+    color: #72A479;
+    font-size: 20px;
+    margin-top: 10px;
+}

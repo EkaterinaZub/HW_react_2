@@ -4,3 +4,12 @@
     align-items: center;
     height: 103px;
 }
+
+@media (max-width:442px) {
+    .container {
+        
+        flex-wrap: wrap;
+       
+    }
+
+}

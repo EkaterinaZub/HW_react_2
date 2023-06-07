@@ -16,8 +16,13 @@ import { PurchaseReturns } from './components/PurchaseReturns/PurchaseReturns';
 import { Figuration } from './components/Figuration/Figuration';
 import { CartProduct } from './components/Main/CartProducr/CartProduct';
 import { constants } from './constants/constants';
-import { Modal } from './components/Modal/Modal';
+// import { Modal } from './components/Modal/Modal';
 import { Preloader } from './components/Preloader/Preloader';
+import { Login } from './components/Modal/Login/Login';
+import { FormComponent } from './components/Modal/FormComponent';
+// import { Cabinet } from './components/Cabinet/Cabinet';
+import { Signup } from './components/Modal/Signup/Signnup';
+import { Profile } from './components/Profile/Profile';
 
 
 export const AppContext = createContext()
@@ -30,6 +35,7 @@ export const App = () => {
   const [basketCaunt, setBasketCaunt] = useState(0)
   const [modal, setModal] = useState(false)
   const [isPreloader, setIsPreloader] = useState(false)
+  const [showLogin, setShowLogin] = useState(false)
   // console.log(modal)
   
   useEffect(() => {
@@ -57,11 +63,11 @@ export const App = () => {
 
 
   return (
-    <AppContext.Provider value={{stat, dispatch,basketCaunt, setBasketCaunt,setModal, modal}} >
+    <AppContext.Provider value={{state, stat, dispatch,basketCaunt, setBasketCaunt, setShowLogin,showLogin, setBasketCaunt,setModal, modal}} >
     <div className="App">
     {isPreloader ? <Preloader/>: 
     <>
-    <Modal modal={modal} setModal={setModal}/>
+    
       <Header showMenu={showMenu} setShowMenu={setShowMenu} />
       
       {!state && <Banner />}
@@ -77,6 +83,11 @@ export const App = () => {
         <Route path={constants.routs.return} element={<PurchaseReturns />} />
         <Route path={constants.routs.conditons} element={<Conditions />} />
         <Route path={constants.routs.figurations} element={<Figuration />} />
+        <Route path='/profile'  element={<Profile/>}/>
+        <Route path='/Modal'  element={<FormComponent/>}/>
+        <Route path='/signup' element={<Signup/>} />
+        <Route path='/login' element={<Login/>}/>
+
       </Routes>
       
       <Footer weather={weather} showMenu={showMenu} setShowMenu={setShowMenu} />

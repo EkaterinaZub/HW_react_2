@@ -1,33 +1,35 @@
-.container{
+.container {
     display: flex;
     justify-content: space-evenly;
     position: relative;
 }
-.cardcount{
+
+.cardcount {
     left: 720px;
 }
 
 
-.lamb{
+.lamb {
     width: 600px;
     height: 400px;
 }
 
-.header{
+.header {
     display: flex;
     flex-direction: column;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     align-items: start;
-    
+
 }
-.headerName{
+
+.headerName {
     display: flex;
     flex-direction: column;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     align-items: start;
 }
 
-.name{
+.name {
     font-family: 'Gilroy';
     color: #FFFF;
     font-size: 25px;
@@ -40,10 +42,11 @@
     font-size: 14px;
     font-weight: 400;
     text-align: start;
-    
+
     width: 411px;
 
 }
+
 .weigt {
     font-family: 'Gilroy';
     font-size: 12px;
@@ -55,7 +58,7 @@
 
 }
 
-.buttonPrice{
+.buttonPrice {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -65,7 +68,7 @@
 
 
 
-.button{
+.button {
     width: 145px;
     height: 50px;
 }
@@ -78,7 +81,7 @@
     margin-left: 30px;
 }
 
-.fats{
+.fats {
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -87,16 +90,16 @@
     font-size: 12px;
     font-weight: 300;
     padding: 30px 30px 30px 0;
-    
+
 }
 
-.calories{
+.calories {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-.item{
+.item {
     margin-top: 15px;
 }
 

@@ -5,3 +5,101 @@
     background-color: #44403F;
 
 }
+
+.products {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.lamb {
+    border-radius: 15px;
+}
+
+.name {
+    font-family: 'Gilroy';
+    color: #FFFF;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: start;
+}
+
+.description {
+    font-family: 'Gilroy';
+    color: #FFFF;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: start;
+}
+
+.productstitle {
+    display: flex;
+    flex-direction: column;
+    width: 260px;
+}
+
+.cardcount {
+    width: 400px;
+    position: absolute;
+    z-index: -1;
+    left: 780px;
+    top: 100px;
+    background-color: #44403F;
+    display: none;
+
+}
+
+.span {
+    /* display: flex; */
+    position: absolute;
+    left: 995px;
+    font-family: 'Gilroy';
+    color: #FFFF;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.delete {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.price {
+    display: flex;
+    order: 1;
+    margin-left: 30px;
+}
+
+@media (max-width:1024px) {
+    .span {
+        left: 734px;
+    }
+
+}
+
+@media (max-width:768px) {
+    .span {
+        display: none;
+    }
+
+    .products {
+        flex-wrap: wrap;
+    }
+
+    .lamb {
+        width: 95%;
+    }
+
+}
+
+@media (max-width:320px) {
+    .price {
+
+        margin-left: 5px;
+    }
+
+
+
+}
