@@ -2,28 +2,34 @@ import styles from './Basket.module.css'
 import { Ordering } from './Ordering/Ordering'
 import { Title } from '../../common/Title/Title'
 import { constants } from '../../constants/constants'
-import { useContext, useEffect, useState } from 'react'
-import { AppContext } from '../../App'
+import {  useEffect, useState } from 'react'
+// import { AppContext } from '../../App'
 import { CartCount } from '../Main/CartCount/CartCount'
 import { Link } from 'react-router-dom';
-import { DELETE_PRODUCT } from '../../reducer/types'
+// import { DELETE_PRODUCT } from '../../reducer/types'
 import { Button } from '../../common/Button/Button'
+import { deleteProduct } from '../../reducer/productReducer1'
+import { increaseCart } from '../../reducer/basketReducer'
 // import {shopping} from '../../assest/images/shopping.svg'
+import { useDispatch, useSelector } from 'react-redux';
 
 export const Basket = () => {
-    const { stat, dispatch, basketCaunt, setBasketCaunt } = useContext(AppContext)
+    // const { basketCaunt, setBasketCaunt } = useContext(AppContext)
     const [basket, setBasket] = useState([])
-
-    console.log(basketCaunt)
+    const state = useSelector((state)=>state.productInitial.productCount)
+    // const basketCaunt = useSelector((state)=>state.basketInitial.basketCount)
+    const dispatch = useDispatch()
+    
 
     useEffect(() => {
         const basketState = []
-
-        stat.filter((product) => {
-            // console.log(product)
+        // console.log(basketState)
+        state.filter((product) => {
+            
             product.products.filter((products) => {
                 // console.log(products)
                 if (products.cartCount > 0) {
+                
                     products = { ...products, url: product.url };
                     basketState.push(products);
                 }
@@ -33,20 +39,13 @@ export const Basket = () => {
 
         });
 
-        // console.log(dispatch)
-        // console.log(basket.products.url)
-
-        // stat.filter((products)=>{
-        //     if (products.cartCount > 0){
-        //         products={...products}
-        //         basketState.push(products)
-        //     }
-        // })
+       
 
         setBasket(basketState)
-    }, [stat])
+       
+    }, [state ])
 
-
+   
 
     const removeProduct = (id, url, cartCount) => {
         const newBasket = basket.filter((el) => el.id !== id)
@@ -55,22 +54,22 @@ export const Basket = () => {
 
         basket.map((elem) => {
             if (elem.id === id)
-                setBasketCaunt(basketCaunt - elem.cartCount)
+            dispatch(increaseCart())
+                // setBasketCaunt(basketCaunt - elem.cartCount)
         })
 
 
         console.log(cartCount);
-        dispatch({
-            type: DELETE_PRODUCT,
+        dispatch(deleteProduct({
+            
             id: id,
             category: url,
-        });
+        }));
 
 
 
     }
 
-    console.log(basket)
 
 
     return (
@@ -98,7 +97,6 @@ export const Basket = () => {
                             <Button
                                 title="X"
                                 onClick={() =>removeProduct(item.id, item.url)}
-                          
                                 // onClick={removeProduct}
                                 category={item.url}
                                 addStyles={styles.delete}

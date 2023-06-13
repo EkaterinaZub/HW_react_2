@@ -4,16 +4,19 @@ import styles from './ColdAppetizers.module.css';
 import { Link, useParams } from 'react-router-dom';
 // import { menu } from '../../../components/data/menu'
 import { CartCount } from '../CartCount/CartCount';
-import { useContext } from 'react';
+// import { useContext } from 'react';
 // import productReducer from '../../../reducer/productReducer';
 // import { initialState } from '../../../reducer/initialState';
 import { Title } from '../../../common/Title/Title';
 // import shopping from '../../../assest/images/shopping.svg'
 import buy from '../../../assest/images/buy.svg'
-import { AppContext } from '../../../App';
+// import { AppContext } from '../../../App';
+import { useDispatch, useSelector } from 'react-redux';
 
 export const ColdAppetizers = () => {
-    const { stat, dispatch } = useContext(AppContext)
+    const state = useSelector((state)=>state.productInitial.productCount)
+    const dispatch = useDispatch()
+    // const { state, dispatch } = useContext(AppContext)
 
 
 
@@ -22,14 +25,14 @@ export const ColdAppetizers = () => {
 
     const { url } = useParams();
     // console.log(url)
-    const { title, products, url: cardsUrl } = stat.find(item => {
+    const { title, products, url: cardsUrl } = state.find(item => {
         if (url === undefined) {
             return item.url === 'cold-snack'
         }
         return item.url === url
     })
 
-
+    
 
     return (
 

@@ -1,24 +1,27 @@
 import styles from './CartProduct.module.css'
 import { Title } from '../../../common/Title/Title'
 // import { initialState } from '../../../reducer/initialState';
-import { useContext } from 'react';
+// import { useContext } from 'react';
 // import productReducer from '../../../reducer/productReducer';
 import { useParams } from 'react-router-dom';
 // import lamb from '../../../assest/images/lamb.png'
 import shopping from '../../../assest/images/shopping.svg'
 // import { Button } from '../../../common/Button/Button';
 import { CartCount } from '../CartCount/CartCount'
-import { AppContext } from '../../../App';
+// import { AppContext } from '../../../App';
+import { useDispatch, useSelector } from 'react-redux';
 
 
 
 export const CartProduct = () => {
     // const [product, setproduct] = useState(initialState)
-    const { stat, dispatch } = useContext(AppContext)
+    const state = useSelector((state)=>state.productInitial.productCount)
+    const dispatch = useDispatch()
+    // const { state, dispatch } = useContext(AppContext)
 
     const { id, url } = useParams()
     // console.log(url)
-    const { products } = stat.find(el => el.url === url);
+    const { products } = state.find(el => el.url === url);
     // console.log(products)
     const product = products.find(item =>
         item.id === +id
@@ -27,14 +30,13 @@ export const CartProduct = () => {
 
 
     )
-    console.log()
+    // console.log(state)
 
 
-    const { description, title, images, cartPrice, cartCount, id: productId, weigt, price, elements, calories } = product
+    const { description, title, images,  id: productId, weigt,  elements, calories } = product
 
 
-    console.log(url)
-    console.log(dispatch)
+    
 
 
 

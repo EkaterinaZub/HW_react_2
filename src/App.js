@@ -9,9 +9,9 @@ import { Footer } from './components/Footer/Footer';
 import { AboutRestaurant } from './components/AboutRestaurant/AboutRestaurant';
 import { Share } from './components/Share/Share';
 import { Conditions } from './components/Conditions/Conditions';
-import { createContext, useReducer, useEffect, useState } from 'react';
-import productReducer from './reducer/productReducer';
-import { initialState } from './reducer/initialState';
+import { createContext, useEffect, useState } from 'react';
+// import productReducer from './reducer/productReducer';
+// import { initialState } from './reducer/initialState';
 import { PurchaseReturns } from './components/PurchaseReturns/PurchaseReturns';
 import { Figuration } from './components/Figuration/Figuration';
 import { CartProduct } from './components/Main/CartProducr/CartProduct';
@@ -20,23 +20,18 @@ import { constants } from './constants/constants';
 import { Preloader } from './components/Preloader/Preloader';
 import { Login } from './components/Modal/Login/Login';
 import { FormComponent } from './components/Modal/FormComponent';
-// import { Cabinet } from './components/Cabinet/Cabinet';
 import { Signup } from './components/Modal/Signup/Signnup';
 import { Profile } from './components/Profile/Profile';
 
 
-export const AppContext = createContext()
+// export const AppContext = createContext()
 
 export const App = () => {
-  let { state } = useLocation();
+  let { state: stateLocation } = useLocation();
   const [showMenu, setShowMenu] = useState(false);
   const [weather, setWeather] = useState({});
-  const [stat, dispatch] = useReducer(productReducer, initialState);
-  const [basketCaunt, setBasketCaunt] = useState(0)
-  const [modal, setModal] = useState(false)
   const [isPreloader, setIsPreloader] = useState(false)
-  const [showLogin, setShowLogin] = useState(false)
-  // console.log(modal)
+  
   
   useEffect(() => {
     setIsPreloader(true)
@@ -63,14 +58,14 @@ export const App = () => {
 
 
   return (
-    <AppContext.Provider value={{state, stat, dispatch,basketCaunt, setBasketCaunt, setShowLogin,showLogin, setBasketCaunt,setModal, modal}} >
+    // <AppContext.Provider value={{ }} >
     <div className="App">
     {isPreloader ? <Preloader/>: 
     <>
     
       <Header showMenu={showMenu} setShowMenu={setShowMenu} />
       
-      {!state && <Banner />}
+      {!stateLocation && <Banner />}
       <Navigation />
       
       <Routes>
@@ -94,7 +89,7 @@ export const App = () => {
 
       </>}
     </div>
-    </AppContext.Provider>
+    // </AppContext.Provider> 
   );
 }
 
