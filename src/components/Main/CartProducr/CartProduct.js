@@ -1,44 +1,27 @@
-import styles from './CartProduct.module.css'
-import { Title } from '../../../common/Title/Title'
-// import { initialState } from '../../../reducer/initialState';
-// import { useContext } from 'react';
-// import productReducer from '../../../reducer/productReducer';
+import styles from './CartProduct.module.css';
+import { Title } from '../../../common/Title/Title';
 import { useParams } from 'react-router-dom';
-// import lamb from '../../../assest/images/lamb.png'
-import shopping from '../../../assest/images/shopping.svg'
-// import { Button } from '../../../common/Button/Button';
-import { CartCount } from '../CartCount/CartCount'
-// import { AppContext } from '../../../App';
+import shopping from '../../../assest/images/shopping.svg';
+import { CartCount } from '../CartCount/CartCount';
 import { useDispatch, useSelector } from 'react-redux';
 
 
 
 export const CartProduct = () => {
-    // const [product, setproduct] = useState(initialState)
-    const state = useSelector((state)=>state.productInitial.productCount)
-    const dispatch = useDispatch()
-    // const { state, dispatch } = useContext(AppContext)
 
-    const { id, url } = useParams()
-    // console.log(url)
+    const state = useSelector((state) => state.productInitial.productCount);
+    const dispatch = useDispatch();
+
+    const { id, url } = useParams();
+
     const { products } = state.find(el => el.url === url);
-    // console.log(products)
+
     const product = products.find(item =>
         item.id === +id
-        // item.title === title
 
+    );
 
-
-    )
-    // console.log(state)
-
-
-    const { description, title, images,  id: productId, weigt,  elements, calories } = product
-
-
-    
-
-
+    const { description, title, images, id: productId, weigt, elements, calories } = product;
 
     return (
         <>

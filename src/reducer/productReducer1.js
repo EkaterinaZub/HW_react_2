@@ -1,11 +1,11 @@
 import { INCREASE_PRICE, DECREASE_PRICE, DELETE_PRODUCT } from "./types"
-import {initialState} from './initialState'
+import { initialState } from './initialState'
 
 
 
-export const increasePrice = (payload)=> ({type: INCREASE_PRICE, payload})
-export const decreasePrice = (payload)=> ({type: DECREASE_PRICE, payload})
-export const deleteProduct = (payload)=> ({type: DELETE_PRODUCT, payload})
+export const increasePrice = (payload) => ({ type: INCREASE_PRICE, payload })
+export const decreasePrice = (payload) => ({ type: DECREASE_PRICE, payload })
+export const deleteProduct = (payload) => ({ type: DELETE_PRODUCT, payload })
 
 const productInitialState = {
     productCount: initialState,
@@ -13,14 +13,14 @@ const productInitialState = {
 }
 
 
-const productReducer1 = (state = productInitialState , action) => {
-    const {productCount} = state
+const productReducer1 = (state = productInitialState, action) => {
+    const { productCount } = state
 
     switch (action.type) {
         case INCREASE_PRICE: {
             const { id, category } = action.payload
             const newState = productCount.map(item => {
-                
+
                 if (item.url === category) {
                     const products = item.products.map(el => {
 
@@ -42,7 +42,7 @@ const productReducer1 = (state = productInitialState , action) => {
                 }
                 return item
             })
-            return    {...state, productCount: newState}
+            return { ...state, productCount: newState }
 
 
         }
@@ -72,7 +72,7 @@ const productReducer1 = (state = productInitialState , action) => {
                 }
                 return item
             })
-            return    {...state, productCount: newState}
+            return { ...state, productCount: newState }
 
         }
 
@@ -91,8 +91,8 @@ const productReducer1 = (state = productInitialState , action) => {
                             return {
 
                                 ...el,
-                                cartPrice:  0,
-                                cartCount:  0
+                                cartPrice: 0,
+                                cartCount: 0
 
                             }
 
@@ -104,10 +104,10 @@ const productReducer1 = (state = productInitialState , action) => {
                 }
                 return item
             })
-            return    {...state, productCount: newState}
+            return { ...state, productCount: newState }
 
         }
-        default: return {...state}
+        default: return { ...state }
     }
 
 
