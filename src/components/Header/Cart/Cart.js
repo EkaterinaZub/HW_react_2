@@ -11,7 +11,7 @@ export const Cart = () => {
 
     // const {basketCaunt} = useContext(AppContext)
     return (
-        <Link to={constants.routs.basket} state='true' className={styles.container}>
+        <Link to={constants.routs.basket} state='false' className={styles.container}>
             <div className={styles.containerCart}>
                 <span className={styles.cart}>{constants.common.cart}</span>
             </div>

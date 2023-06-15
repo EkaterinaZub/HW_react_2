@@ -8,7 +8,7 @@ export const EffectComponents = () => {
 
     const {weather, status} = useSelector (state=> state.weatherInitial);
     const dispatch = useDispatch();
-console.log(weather)
+// console.log(weather)
     useEffect(()=>{
         if (status === 'idle') {
             dispatch(getWeather())
