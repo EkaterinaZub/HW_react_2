@@ -44,11 +44,8 @@
 
 }
 .text_open{
-    display: flex;
-    width: 618px;
-    padding-left: 20px;
-    background-color: #504B4A;
-    border-radius: 10px;
+    display: block;
+    
     
 
 }

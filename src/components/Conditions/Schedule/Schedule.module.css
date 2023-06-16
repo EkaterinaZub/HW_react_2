@@ -1,0 +1,31 @@
+@import '../../../assest/fonts/fonts.css';
+
+.container {
+    display: flex;
+}
+
+.schedule{
+    margin-left: 30px;
+    text-align: start;
+}
+
+.cafe{
+    margin-left: 100px;
+    text-align: start;
+}
+
+.header{
+    font-family: 'Gilroy';
+    color: #FFFF;
+    font-size: 22px;
+    font-weight: 700;
+    
+}
+
+.time{
+    font-family: 'Gilroy';
+    color: #FFFF;
+    font-size: 22px;
+    font-weight: 400;
+    
+}
