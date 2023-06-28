@@ -3,11 +3,19 @@ import styles from './Cart.module.css'
 // import { useContext } from 'react'
 // import { AppContext } from '../../../App'
 import { constants } from '../../../constants/constants'
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
+// import { useEffect } from 'react'
+// import { setCookies } from '../../../toolkitRedux/productSlice'
 
 export const Cart = () => {
     
     const basketCaunt = useSelector((state)=> state.basketInitial.basketCount)
+    const dispatch = useDispatch()
+    
+    
+    // useEffect(()=>{
+    //     dispatch(setCookies(basketCaunt))
+    // },[basketCaunt])
 
     // const {basketCaunt} = useContext(AppContext)
     return (

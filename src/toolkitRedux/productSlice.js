@@ -1,5 +1,13 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import { initialState } from "../reducer/initialState";
+import Cookies from 'js-cookie'
+
+export const setCookies = createAsyncThunk('productCount/setCookies',
+    async (action) => {
+        Cookies.set('count', action, { expires: 7, path: '' })
+    }
+
+)
 
 const productSlice = createSlice({
     name: "productCount",

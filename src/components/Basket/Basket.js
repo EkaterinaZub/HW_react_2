@@ -32,7 +32,8 @@ export const Basket = () => {
 
         });
 
-        setBasket(basketState)
+        setBasket(basketState);
+        localStorage.setItem("basket", JSON.stringify(basketState));
 
     }, [state])
 

@@ -2,12 +2,22 @@ import { Link } from 'react-router-dom'
 import styles from './Ordering.module.css'
 import { Button } from '../../../common/Button/Button'
 import { constants } from '../../../constants/constants'
+import { useDispatch } from 'react-redux'
+import { setCookies } from '../../../toolkitRedux/productSlice'
+import { useEffect } from 'react'
 
 export const Ordering = ({basket}) => {
     // const [state, setState] = useState();
+
+    const dispatch = useDispatch()
     const total = basket.reduce((sum, el)=>{
         return sum + el.cartPrice
     },0)
+
+
+    useEffect(()=>{
+        dispatch(setCookies(total))
+    },[total])
     
 
 
